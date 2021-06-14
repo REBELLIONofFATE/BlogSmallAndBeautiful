@@ -1,0 +1,4 @@
+2021-05-31 18:04:48.042  INFO 7656 --- [restartedMain] com.wyx.blog.BlogApplication             : Starting BlogApplication using Java 1.8.0_74 on MACHENIKE-PC with PID 7656 (D:\My_project\people_manage\blog\target\classes started by MK in D:\My_project\people_manage\blog)
+2021-05-31 18:04:48.042  INFO 7656 --- [restartedMain] com.wyx.blog.BlogApplication             : The following profiles are active: pro
+2021-05-31 18:04:48.384  WARN 7656 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-31 18:04:48.451  INFO 7656 --- [restartedMain] com.wyx.blog.BlogApplication             : Started BlogApplication in 0.443 seconds (JVM running for 70.121)

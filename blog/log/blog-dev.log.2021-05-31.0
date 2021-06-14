@@ -1,0 +1,700 @@
+2021-05-31 17:59:49.775  INFO 11796 --- [restartedMain] com.wyx.blog.BlogApplication             : Starting BlogApplication using Java 1.8.0_74 on MACHENIKE-PC with PID 11796 (D:\My_project\people_manage\blog\target\classes started by MK in D:\My_project\people_manage\blog)
+2021-05-31 17:59:49.777 DEBUG 11796 --- [restartedMain] com.wyx.blog.BlogApplication             : Running with Spring Boot v2.5.0, Spring v5.3.7
+2021-05-31 17:59:49.778  INFO 11796 --- [restartedMain] com.wyx.blog.BlogApplication             : No active profile set, falling back to default profiles: default
+2021-05-31 17:59:49.822  INFO 11796 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-31 17:59:49.829  INFO 11796 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-31 17:59:50.330  INFO 11796 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-31 17:59:50.340  INFO 11796 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 JPA repository interfaces.
+2021-05-31 17:59:50.739  INFO 11796 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-31 17:59:50.745  INFO 11796 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-31 17:59:50.745  INFO 11796 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-31 17:59:50.813  INFO 11796 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-31 17:59:50.813  INFO 11796 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 984 ms
+2021-05-31 17:59:50.917  INFO 11796 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-31 17:59:50.949  INFO 11796 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-05-31 17:59:51.042  INFO 11796 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-31 17:59:51.177  INFO 11796 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-05-31 17:59:51.376  INFO 11796 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-05-31 17:59:51.392  INFO 11796 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-05-31 17:59:51.541  INFO 11796 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-31 17:59:51.549  INFO 11796 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-31 17:59:51.589  WARN 11796 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-31 17:59:51.718  INFO 11796 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-05-31 17:59:51.812  INFO 11796 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-05-31 17:59:51.841  INFO 11796 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-31 17:59:51.849  INFO 11796 --- [restartedMain] com.wyx.blog.BlogApplication             : Started BlogApplication in 2.443 seconds (JVM running for 3.624)
+2021-05-31 17:59:51.850  INFO 11796 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-05-31 17:59:51.851  INFO 11796 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-31 17:59:55.924  INFO 11796 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-31 17:59:55.924  INFO 11796 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-31 17:59:55.926  INFO 11796 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-05-31 18:03:39.827  INFO 7656 --- [restartedMain] com.wyx.blog.BlogApplication             : Starting BlogApplication using Java 1.8.0_74 on MACHENIKE-PC with PID 7656 (D:\My_project\people_manage\blog\target\classes started by MK in D:\My_project\people_manage\blog)
+2021-05-31 18:03:39.830 DEBUG 7656 --- [restartedMain] com.wyx.blog.BlogApplication             : Running with Spring Boot v2.5.0, Spring v5.3.7
+2021-05-31 18:03:39.830  INFO 7656 --- [restartedMain] com.wyx.blog.BlogApplication             : The following profiles are active: dev
+2021-05-31 18:03:39.868  INFO 7656 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-31 18:03:39.869  INFO 7656 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-31 18:03:40.500  INFO 7656 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-31 18:03:40.514  INFO 7656 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 JPA repository interfaces.
+2021-05-31 18:03:41.031  INFO 7656 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-31 18:03:41.041  INFO 7656 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-31 18:03:41.042  INFO 7656 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-31 18:03:41.124  INFO 7656 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-31 18:03:41.125  INFO 7656 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1255 ms
+2021-05-31 18:03:41.262  INFO 7656 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-31 18:03:41.305  INFO 7656 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-05-31 18:03:41.436  INFO 7656 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-31 18:03:41.608  INFO 7656 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-05-31 18:03:41.853  INFO 7656 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-05-31 18:03:41.869  INFO 7656 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-05-31 18:03:42.059  INFO 7656 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-31 18:03:42.071  INFO 7656 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-31 18:03:42.116  WARN 7656 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-31 18:03:42.263  INFO 7656 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-05-31 18:03:42.390  INFO 7656 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-05-31 18:03:42.426  INFO 7656 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-31 18:03:42.437  INFO 7656 --- [restartedMain] com.wyx.blog.BlogApplication             : Started BlogApplication in 2.965 seconds (JVM running for 4.107)
+2021-05-31 18:03:42.438  INFO 7656 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-05-31 18:03:42.440  INFO 7656 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-31 18:03:46.171  INFO 7656 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-31 18:03:46.171  INFO 7656 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-31 18:03:46.173  INFO 7656 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-05-31 18:04:13.421  INFO 7656 --- [Thread-12] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-05-31 18:04:13.824  INFO 7656 --- [Thread-12] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-05-31 18:04:13.826  INFO 7656 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-05-31 18:04:13.829  INFO 7656 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-05-31 18:04:13.993  INFO 7656 --- [restartedMain] com.wyx.blog.BlogApplication             : Starting BlogApplication using Java 1.8.0_74 on MACHENIKE-PC with PID 7656 (D:\My_project\people_manage\blog\target\classes started by MK in D:\My_project\people_manage\blog)
+2021-05-31 18:04:13.993 DEBUG 7656 --- [restartedMain] com.wyx.blog.BlogApplication             : Running with Spring Boot v2.5.0, Spring v5.3.7
+2021-05-31 18:04:13.993  INFO 7656 --- [restartedMain] com.wyx.blog.BlogApplication             : The following profiles are active: dev
+2021-05-31 18:04:14.127  INFO 7656 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-31 18:04:14.128  INFO 7656 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2021-05-31 18:04:14.234  INFO 7656 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-31 18:04:14.235  INFO 7656 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-31 18:04:14.235  INFO 7656 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-31 18:04:14.255  INFO 7656 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-31 18:04:14.256  INFO 7656 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 261 ms
+2021-05-31 18:04:14.280  INFO 7656 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-31 18:04:14.283  INFO 7656 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-05-31 18:04:14.295  INFO 7656 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2021-05-31 18:04:14.296  INFO 7656 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-05-31 18:04:14.305  INFO 7656 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-31 18:04:14.306  INFO 7656 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-31 18:04:14.317  WARN 7656 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-31 18:04:14.354  INFO 7656 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-05-31 18:04:14.393  INFO 7656 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-05-31 18:04:14.405  INFO 7656 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-31 18:04:14.410  INFO 7656 --- [restartedMain] com.wyx.blog.BlogApplication             : Started BlogApplication in 0.444 seconds (JVM running for 36.079)
+2021-05-31 18:04:14.410  INFO 7656 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-05-31 18:04:14.413  INFO 7656 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-05-31 18:04:14.413  INFO 7656 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-31 18:04:47.357  INFO 7656 --- [Thread-20] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-05-31 18:04:47.862  INFO 7656 --- [Thread-20] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-05-31 18:04:47.863  INFO 7656 --- [Thread-20] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2021-05-31 18:04:47.872  INFO 7656 --- [Thread-20] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2021-05-31 18:06:58.530  INFO 14256 --- [restartedMain] com.wyx.blog.BlogApplication             : Starting BlogApplication using Java 1.8.0_74 on MACHENIKE-PC with PID 14256 (D:\My_project\people_manage\blog\target\classes started by MK in D:\My_project\people_manage\blog)
+2021-05-31 18:06:58.532 DEBUG 14256 --- [restartedMain] com.wyx.blog.BlogApplication             : Running with Spring Boot v2.5.0, Spring v5.3.7
+2021-05-31 18:06:58.533  INFO 14256 --- [restartedMain] com.wyx.blog.BlogApplication             : The following profiles are active: dev
+2021-05-31 18:06:58.572  INFO 14256 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-31 18:06:58.572  INFO 14256 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-31 18:06:59.023  INFO 14256 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-31 18:06:59.032  INFO 14256 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 JPA repository interfaces.
+2021-05-31 18:06:59.475  INFO 14256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-31 18:06:59.483  INFO 14256 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-31 18:06:59.483  INFO 14256 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-31 18:06:59.555  INFO 14256 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-31 18:06:59.555  INFO 14256 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 982 ms
+2021-05-31 18:06:59.664  INFO 14256 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-31 18:06:59.694  INFO 14256 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-05-31 18:06:59.810  INFO 14256 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-31 18:06:59.962  INFO 14256 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-05-31 18:07:00.140  INFO 14256 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-05-31 18:07:00.153  INFO 14256 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-05-31 18:07:00.296  INFO 14256 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-31 18:07:00.305  INFO 14256 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-31 18:07:00.343  WARN 14256 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-31 18:07:00.502  INFO 14256 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-05-31 18:07:00.615  INFO 14256 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-05-31 18:07:00.645  INFO 14256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-31 18:07:00.655  INFO 14256 --- [restartedMain] com.wyx.blog.BlogApplication             : Started BlogApplication in 2.445 seconds (JVM running for 3.584)
+2021-05-31 18:07:00.656  INFO 14256 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-05-31 18:07:00.657  INFO 14256 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-31 18:07:26.210  INFO 14256 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-31 18:07:26.210  INFO 14256 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-31 18:07:26.211  INFO 14256 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-05-31 18:09:32.934  INFO 2976 --- [restartedMain] com.wyx.blog.BlogApplication             : Starting BlogApplication using Java 1.8.0_74 on MACHENIKE-PC with PID 2976 (D:\My_project\people_manage\blog\target\classes started by MK in D:\My_project\people_manage\blog)
+2021-05-31 18:09:32.937 DEBUG 2976 --- [restartedMain] com.wyx.blog.BlogApplication             : Running with Spring Boot v2.5.0, Spring v5.3.7
+2021-05-31 18:09:32.937  INFO 2976 --- [restartedMain] com.wyx.blog.BlogApplication             : The following profiles are active: dev
+2021-05-31 18:09:32.973  INFO 2976 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-31 18:09:32.973  INFO 2976 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-31 18:09:33.576  INFO 2976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-31 18:09:33.590  INFO 2976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
+2021-05-31 18:09:34.105  INFO 2976 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-31 18:09:34.112  INFO 2976 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-31 18:09:34.113  INFO 2976 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-31 18:09:34.188  INFO 2976 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-31 18:09:34.188  INFO 2976 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1214 ms
+2021-05-31 18:09:34.322  INFO 2976 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-31 18:09:34.356  INFO 2976 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-05-31 18:09:34.481  INFO 2976 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-31 18:09:34.555  INFO 2976 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-05-31 18:09:34.865  INFO 2976 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-05-31 18:09:34.885  INFO 2976 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-05-31 18:09:35.061  INFO 2976 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-31 18:09:35.072  INFO 2976 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-31 18:09:35.117  WARN 2976 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-31 18:09:35.270  INFO 2976 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-05-31 18:09:35.383  INFO 2976 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-05-31 18:09:35.414  INFO 2976 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-31 18:09:35.424  INFO 2976 --- [restartedMain] com.wyx.blog.BlogApplication             : Started BlogApplication in 2.863 seconds (JVM running for 4.006)
+2021-05-31 18:09:35.425  INFO 2976 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-05-31 18:09:35.426  INFO 2976 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-31 18:09:37.673  INFO 2976 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-31 18:09:37.673  INFO 2976 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-31 18:09:37.674  INFO 2976 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-05-31 18:11:51.580  INFO 4476 --- [restartedMain] com.wyx.blog.BlogApplication             : Starting BlogApplication using Java 1.8.0_74 on MACHENIKE-PC with PID 4476 (D:\My_project\people_manage\blog\target\classes started by MK in D:\My_project\people_manage\blog)
+2021-05-31 18:11:51.582 DEBUG 4476 --- [restartedMain] com.wyx.blog.BlogApplication             : Running with Spring Boot v2.5.0, Spring v5.3.7
+2021-05-31 18:11:51.582  INFO 4476 --- [restartedMain] com.wyx.blog.BlogApplication             : The following profiles are active: dev
+2021-05-31 18:11:51.617  INFO 4476 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-31 18:11:51.618  INFO 4476 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-31 18:11:52.074  INFO 4476 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-31 18:11:52.085  INFO 4476 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2021-05-31 18:11:52.498  INFO 4476 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-31 18:11:52.505  INFO 4476 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-31 18:11:52.505  INFO 4476 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-31 18:11:52.577  INFO 4476 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-31 18:11:52.577  INFO 4476 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 958 ms
+2021-05-31 18:11:52.694  INFO 4476 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-31 18:11:52.732  INFO 4476 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-05-31 18:11:52.847  INFO 4476 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-31 18:11:52.912  INFO 4476 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-05-31 18:11:53.104  INFO 4476 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-05-31 18:11:53.118  INFO 4476 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-05-31 18:11:53.266  INFO 4476 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-31 18:11:53.275  INFO 4476 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-31 18:11:53.317  WARN 4476 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-31 18:11:53.444  INFO 4476 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-05-31 18:11:53.554  INFO 4476 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-05-31 18:11:53.585  INFO 4476 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-31 18:11:53.593  INFO 4476 --- [restartedMain] com.wyx.blog.BlogApplication             : Started BlogApplication in 2.448 seconds (JVM running for 3.711)
+2021-05-31 18:11:53.593  INFO 4476 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-05-31 18:11:53.595  INFO 4476 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-31 18:11:53.708  INFO 4476 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-31 18:11:53.708  INFO 4476 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-31 18:11:53.709  INFO 4476 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-05-31 18:11:53.787 ERROR 4476 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ArithmeticException: / by zero] with root cause
+
+java.lang.ArithmeticException: / by zero
+	at com.wyx.blog.web.IndexController.index(IndexController.java:11)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1063)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2021-05-31 19:21:52.598  WARN 4476 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h8m29s377ms105µs800ns).
+2021-05-31 20:06:23.504  INFO 6968 --- [restartedMain] com.wyx.blog.BlogApplication             : Starting BlogApplication using Java 1.8.0_74 on MACHENIKE-PC with PID 6968 (D:\My_project\people_manage\blog\target\classes started by MK in D:\My_project\people_manage\blog)
+2021-05-31 20:06:23.507 DEBUG 6968 --- [restartedMain] com.wyx.blog.BlogApplication             : Running with Spring Boot v2.5.0, Spring v5.3.7
+2021-05-31 20:06:23.508  INFO 6968 --- [restartedMain] com.wyx.blog.BlogApplication             : The following profiles are active: dev
+2021-05-31 20:06:23.546  INFO 6968 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-31 20:06:23.546  INFO 6968 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-31 20:06:24.035  INFO 6968 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-31 20:06:24.049  INFO 6968 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2021-05-31 20:06:24.565  INFO 6968 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-31 20:06:24.572  INFO 6968 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-31 20:06:24.572  INFO 6968 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-31 20:06:24.650  INFO 6968 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-31 20:06:24.651  INFO 6968 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1103 ms
+2021-05-31 20:06:24.798  INFO 6968 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-31 20:06:24.839  INFO 6968 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-05-31 20:06:24.967  INFO 6968 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-31 20:06:25.041  INFO 6968 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-05-31 20:06:25.260  INFO 6968 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-05-31 20:06:25.276  INFO 6968 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-05-31 20:06:25.453  INFO 6968 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-31 20:06:25.466  INFO 6968 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-31 20:06:25.516  WARN 6968 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-31 20:06:25.673  INFO 6968 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-05-31 20:06:25.798  INFO 6968 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-05-31 20:06:25.838  INFO 6968 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-31 20:06:25.849  INFO 6968 --- [restartedMain] com.wyx.blog.BlogApplication             : Started BlogApplication in 2.772 seconds (JVM running for 4.029)
+2021-05-31 20:06:25.851  INFO 6968 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-05-31 20:06:25.854  INFO 6968 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-31 20:07:10.046  INFO 6968 --- [Thread-12] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-05-31 20:07:10.624  INFO 6968 --- [Thread-12] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-05-31 20:07:10.628  INFO 6968 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-05-31 20:07:10.633  INFO 6968 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-05-31 20:07:10.815  INFO 6968 --- [restartedMain] com.wyx.blog.BlogApplication             : Starting BlogApplication using Java 1.8.0_74 on MACHENIKE-PC with PID 6968 (D:\My_project\people_manage\blog\target\classes started by MK in D:\My_project\people_manage\blog)
+2021-05-31 20:07:10.816 DEBUG 6968 --- [restartedMain] com.wyx.blog.BlogApplication             : Running with Spring Boot v2.5.0, Spring v5.3.7
+2021-05-31 20:07:10.816  INFO 6968 --- [restartedMain] com.wyx.blog.BlogApplication             : The following profiles are active: dev
+2021-05-31 20:07:11.005  INFO 6968 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-31 20:07:11.006  INFO 6968 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2021-05-31 20:07:11.160  INFO 6968 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-31 20:07:11.162  INFO 6968 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-31 20:07:11.163  INFO 6968 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-31 20:07:11.208  INFO 6968 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-31 20:07:11.209  INFO 6968 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 391 ms
+2021-05-31 20:07:11.280  INFO 6968 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-31 20:07:11.287  INFO 6968 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-05-31 20:07:11.306  INFO 6968 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2021-05-31 20:07:11.306  INFO 6968 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-05-31 20:07:11.322  INFO 6968 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-31 20:07:11.323  INFO 6968 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-31 20:07:11.345  WARN 6968 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-31 20:07:11.410  INFO 6968 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-05-31 20:07:11.500  INFO 6968 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-05-31 20:07:11.515  INFO 6968 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-31 20:07:11.520  INFO 6968 --- [restartedMain] com.wyx.blog.BlogApplication             : Started BlogApplication in 0.741 seconds (JVM running for 49.701)
+2021-05-31 20:07:11.521  INFO 6968 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-05-31 20:07:11.524  INFO 6968 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-05-31 20:07:11.525  INFO 6968 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-31 20:07:12.930  INFO 6968 --- [Thread-19] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-05-31 20:07:13.353  INFO 6968 --- [Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-05-31 20:07:13.354  INFO 6968 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2021-05-31 20:07:13.361  INFO 6968 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2021-05-31 20:07:13.509  INFO 6968 --- [restartedMain] com.wyx.blog.BlogApplication             : Starting BlogApplication using Java 1.8.0_74 on MACHENIKE-PC with PID 6968 (D:\My_project\people_manage\blog\target\classes started by MK in D:\My_project\people_manage\blog)
+2021-05-31 20:07:13.509 DEBUG 6968 --- [restartedMain] com.wyx.blog.BlogApplication             : Running with Spring Boot v2.5.0, Spring v5.3.7
+2021-05-31 20:07:13.509  INFO 6968 --- [restartedMain] com.wyx.blog.BlogApplication             : The following profiles are active: dev
+2021-05-31 20:07:13.629  INFO 6968 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-31 20:07:13.631  INFO 6968 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2021-05-31 20:07:13.695  INFO 6968 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-31 20:07:13.695  INFO 6968 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-31 20:07:13.695  INFO 6968 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-31 20:07:13.711  INFO 6968 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-31 20:07:13.711  INFO 6968 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 198 ms
+2021-05-31 20:07:13.733  INFO 6968 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-31 20:07:13.735  INFO 6968 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2021-05-31 20:07:13.750  INFO 6968 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2021-05-31 20:07:13.750  INFO 6968 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-05-31 20:07:13.762  INFO 6968 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-31 20:07:13.763  INFO 6968 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-31 20:07:13.772  WARN 6968 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-31 20:07:13.805  INFO 6968 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-05-31 20:07:13.847  INFO 6968 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-05-31 20:07:13.855  INFO 6968 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-31 20:07:13.860  INFO 6968 --- [restartedMain] com.wyx.blog.BlogApplication             : Started BlogApplication in 0.387 seconds (JVM running for 52.04)
+2021-05-31 20:07:13.860  INFO 6968 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-05-31 20:07:13.861  INFO 6968 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-05-31 20:07:13.861  INFO 6968 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-31 20:07:14.049  INFO 6968 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-31 20:07:14.050  INFO 6968 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-31 20:07:14.051  INFO 6968 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-05-31 20:07:14.119  WARN 6968 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.ArithmeticException: / by zero]
+2021-05-31 20:07:52.378  WARN 6968 --- [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.ArithmeticException: / by zero]
+2021-05-31 20:25:58.354  INFO 4940 --- [restartedMain] com.wyx.blog.BlogApplication             : Starting BlogApplication using Java 1.8.0_74 on MACHENIKE-PC with PID 4940 (D:\My_project\people_manage\blog\target\classes started by MK in D:\My_project\people_manage\blog)
+2021-05-31 20:25:58.357 DEBUG 4940 --- [restartedMain] com.wyx.blog.BlogApplication             : Running with Spring Boot v2.5.0, Spring v5.3.7
+2021-05-31 20:25:58.358  INFO 4940 --- [restartedMain] com.wyx.blog.BlogApplication             : The following profiles are active: dev
+2021-05-31 20:25:58.402  INFO 4940 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-31 20:25:58.402  INFO 4940 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-31 20:25:58.973  INFO 4940 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-31 20:25:58.985  INFO 4940 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2021-05-31 20:25:59.485  INFO 4940 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-31 20:25:59.493  INFO 4940 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-31 20:25:59.493  INFO 4940 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-31 20:25:59.567  INFO 4940 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-31 20:25:59.567  INFO 4940 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1164 ms
+2021-05-31 20:25:59.703  INFO 4940 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-31 20:25:59.737  INFO 4940 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-05-31 20:25:59.860  INFO 4940 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-31 20:25:59.926  INFO 4940 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-05-31 20:26:00.165  INFO 4940 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-05-31 20:26:00.183  INFO 4940 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-05-31 20:26:00.344  INFO 4940 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-31 20:26:00.354  INFO 4940 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-31 20:26:00.400  WARN 4940 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-31 20:26:00.540  INFO 4940 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-05-31 20:26:00.654  INFO 4940 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-05-31 20:26:00.684  INFO 4940 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-31 20:26:00.695  INFO 4940 --- [restartedMain] com.wyx.blog.BlogApplication             : Started BlogApplication in 2.828 seconds (JVM running for 4.188)
+2021-05-31 20:26:00.696  INFO 4940 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-05-31 20:26:00.698  INFO 4940 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-31 20:26:01.746  INFO 4940 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-31 20:26:01.746  INFO 4940 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-31 20:26:01.747  INFO 4940 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-05-31 20:26:01.818 ERROR 4940 --- [http-nio-8080-exec-1] c.w.b.h.ControllerExceptionHandler       : request url : http://localhost:8080/.exception : {}
+
+com.wyx.blog.NotFoundException: 博客不存在
+	at com.wyx.blog.web.IndexController.index(IndexController.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1063)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2021-05-31 20:26:01.821  WARN 4940 --- [http-nio-8080-exec-1] .w.s.m.a.ResponseStatusExceptionResolver : Resolved [com.wyx.blog.NotFoundException: 博客不存在]
+2021-05-31 20:49:08.266  INFO 14180 --- [restartedMain] com.wyx.blog.BlogApplication             : Starting BlogApplication using Java 1.8.0_74 on MACHENIKE-PC with PID 14180 (D:\My_project\people_manage\blog\target\classes started by MK in D:\My_project\people_manage\blog)
+2021-05-31 20:49:08.269 DEBUG 14180 --- [restartedMain] com.wyx.blog.BlogApplication             : Running with Spring Boot v2.5.0, Spring v5.3.7
+2021-05-31 20:49:08.269  INFO 14180 --- [restartedMain] com.wyx.blog.BlogApplication             : The following profiles are active: dev
+2021-05-31 20:49:08.311  INFO 14180 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-31 20:49:08.312  INFO 14180 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-31 20:49:08.767  INFO 14180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-31 20:49:08.778  INFO 14180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2021-05-31 20:49:09.439  INFO 14180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-31 20:49:09.448  INFO 14180 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-31 20:49:09.448  INFO 14180 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-31 20:49:09.534  INFO 14180 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-31 20:49:09.534  INFO 14180 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1222 ms
+2021-05-31 20:49:09.682  INFO 14180 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-31 20:49:09.751  INFO 14180 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-05-31 20:49:09.828  INFO 14180 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-31 20:49:09.893  INFO 14180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-05-31 20:49:10.095  INFO 14180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-05-31 20:49:10.111  INFO 14180 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-05-31 20:49:10.268  INFO 14180 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-31 20:49:10.278  INFO 14180 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-31 20:49:10.370  WARN 14180 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-31 20:49:10.618  INFO 14180 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-05-31 20:49:10.837  INFO 14180 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-05-31 20:49:10.869  INFO 14180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-31 20:49:10.877  INFO 14180 --- [restartedMain] com.wyx.blog.BlogApplication             : Started BlogApplication in 3.047 seconds (JVM running for 4.339)
+2021-05-31 20:49:10.878  INFO 14180 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-05-31 20:49:10.880  INFO 14180 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-31 20:49:34.803  INFO 11472 --- [restartedMain] com.wyx.blog.BlogApplication             : Starting BlogApplication using Java 1.8.0_74 on MACHENIKE-PC with PID 11472 (D:\My_project\people_manage\blog\target\classes started by MK in D:\My_project\people_manage\blog)
+2021-05-31 20:49:34.805 DEBUG 11472 --- [restartedMain] com.wyx.blog.BlogApplication             : Running with Spring Boot v2.5.0, Spring v5.3.7
+2021-05-31 20:49:34.806  INFO 11472 --- [restartedMain] com.wyx.blog.BlogApplication             : The following profiles are active: dev
+2021-05-31 20:49:34.845  INFO 11472 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-31 20:49:34.845  INFO 11472 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-31 20:49:35.341  INFO 11472 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-31 20:49:35.351  INFO 11472 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 JPA repository interfaces.
+2021-05-31 20:49:35.885  INFO 11472 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-31 20:49:35.892  INFO 11472 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-31 20:49:35.892  INFO 11472 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-31 20:49:35.979  INFO 11472 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-31 20:49:35.980  INFO 11472 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1134 ms
+2021-05-31 20:49:36.126  INFO 11472 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-31 20:49:36.196  INFO 11472 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-05-31 20:49:36.272  INFO 11472 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-31 20:49:36.332  INFO 11472 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-05-31 20:49:36.532  INFO 11472 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-05-31 20:49:36.547  INFO 11472 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-05-31 20:49:36.707  INFO 11472 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-31 20:49:36.716  INFO 11472 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-31 20:49:36.800  WARN 11472 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-31 20:49:37.052  INFO 11472 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-05-31 20:49:37.267  INFO 11472 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-05-31 20:49:37.299  INFO 11472 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-31 20:49:37.308  INFO 11472 --- [restartedMain] com.wyx.blog.BlogApplication             : Started BlogApplication in 2.922 seconds (JVM running for 4.078)
+2021-05-31 20:49:37.309  INFO 11472 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-05-31 20:49:37.310  INFO 11472 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-31 20:50:14.666  INFO 11472 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-31 20:50:14.667  INFO 11472 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-31 20:50:14.669  INFO 11472 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-05-31 20:50:14.735  INFO 11472 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : ---------doBefore------
+2021-05-31 20:50:14.744  INFO 11472 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-05-31 20:50:14.747 ERROR 11472 --- [http-nio-8080-exec-1] c.w.b.h.ControllerExceptionHandler       : request url : http://localhost:8080/.exception : {}
+
+com.wyx.blog.NotFoundException: 博客不存在
+	at com.wyx.blog.web.IndexController.index(IndexController.java:15)
+	at com.wyx.blog.web.IndexController$$FastClassBySpringCGLIB$$bcc5a16d.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:57)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:49)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692)
+	at com.wyx.blog.web.IndexController$$EnhancerBySpringCGLIB$$2b9aed5d.index(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1063)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2021-05-31 20:50:14.749  WARN 11472 --- [http-nio-8080-exec-1] .w.s.m.a.ResponseStatusExceptionResolver : Resolved [com.wyx.blog.NotFoundException: 博客不存在]
+2021-05-31 20:50:45.603  INFO 14976 --- [restartedMain] com.wyx.blog.BlogApplication             : Starting BlogApplication using Java 1.8.0_74 on MACHENIKE-PC with PID 14976 (D:\My_project\people_manage\blog\target\classes started by MK in D:\My_project\people_manage\blog)
+2021-05-31 20:50:45.605 DEBUG 14976 --- [restartedMain] com.wyx.blog.BlogApplication             : Running with Spring Boot v2.5.0, Spring v5.3.7
+2021-05-31 20:50:45.605  INFO 14976 --- [restartedMain] com.wyx.blog.BlogApplication             : The following profiles are active: dev
+2021-05-31 20:50:45.643  INFO 14976 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-31 20:50:45.644  INFO 14976 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-31 20:50:46.141  INFO 14976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-31 20:50:46.152  INFO 14976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2021-05-31 20:50:46.764  INFO 14976 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-31 20:50:46.771  INFO 14976 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-31 20:50:46.771  INFO 14976 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-31 20:50:46.855  INFO 14976 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-31 20:50:46.855  INFO 14976 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1211 ms
+2021-05-31 20:50:47.001  INFO 14976 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-31 20:50:47.078  INFO 14976 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-05-31 20:50:47.168  INFO 14976 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-31 20:50:47.240  INFO 14976 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-05-31 20:50:47.434  INFO 14976 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-05-31 20:50:47.448  INFO 14976 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-05-31 20:50:47.609  INFO 14976 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-31 20:50:47.618  INFO 14976 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-31 20:50:47.697  WARN 14976 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-31 20:50:47.974  INFO 14976 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-05-31 20:50:48.179  INFO 14976 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-05-31 20:50:48.210  INFO 14976 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-31 20:50:48.218  INFO 14976 --- [restartedMain] com.wyx.blog.BlogApplication             : Started BlogApplication in 3.08 seconds (JVM running for 4.29)
+2021-05-31 20:50:48.219  INFO 14976 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-05-31 20:50:48.220  INFO 14976 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-31 20:50:50.782  INFO 14976 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-31 20:50:50.782  INFO 14976 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-31 20:50:50.783  INFO 14976 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-05-31 20:50:50.852  INFO 14976 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : ---------doBefore------
+2021-05-31 20:50:50.861  INFO 14976 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : result : index
+2021-05-31 20:50:50.862  INFO 14976 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-05-31 20:52:17.749  INFO 5880 --- [restartedMain] com.wyx.blog.BlogApplication             : Starting BlogApplication using Java 1.8.0_74 on MACHENIKE-PC with PID 5880 (D:\My_project\people_manage\blog\target\classes started by MK in D:\My_project\people_manage\blog)
+2021-05-31 20:52:17.751 DEBUG 5880 --- [restartedMain] com.wyx.blog.BlogApplication             : Running with Spring Boot v2.5.0, Spring v5.3.7
+2021-05-31 20:52:17.751  INFO 5880 --- [restartedMain] com.wyx.blog.BlogApplication             : The following profiles are active: dev
+2021-05-31 20:52:17.792  INFO 5880 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-31 20:52:17.792  INFO 5880 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-31 20:52:18.325  INFO 5880 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-31 20:52:18.339  INFO 5880 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2021-05-31 20:52:19.058  INFO 5880 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-31 20:52:19.067  INFO 5880 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-31 20:52:19.068  INFO 5880 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-31 20:52:19.181  INFO 5880 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-31 20:52:19.182  INFO 5880 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1389 ms
+2021-05-31 20:52:19.353  INFO 5880 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-31 20:52:19.436  INFO 5880 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-05-31 20:52:19.536  INFO 5880 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-31 20:52:19.616  INFO 5880 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-05-31 20:52:19.865  INFO 5880 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-05-31 20:52:19.884  INFO 5880 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-05-31 20:52:20.058  INFO 5880 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-31 20:52:20.068  INFO 5880 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-31 20:52:20.157  WARN 5880 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-31 20:52:20.457  INFO 5880 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-05-31 20:52:20.667  INFO 5880 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-05-31 20:52:20.700  INFO 5880 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-31 20:52:20.708  INFO 5880 --- [restartedMain] com.wyx.blog.BlogApplication             : Started BlogApplication in 3.433 seconds (JVM running for 4.692)
+2021-05-31 20:52:20.709  INFO 5880 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-05-31 20:52:20.711  INFO 5880 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-31 20:52:22.073  INFO 5880 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-31 20:52:22.073  INFO 5880 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-31 20:52:22.074  INFO 5880 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-05-31 20:52:22.141  INFO 5880 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : ---------doBefore------
+2021-05-31 20:52:22.149  INFO 5880 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : result : index
+2021-05-31 20:52:22.149  INFO 5880 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-05-31 20:57:07.543  INFO 5880 --- [http-nio-8080-exec-10] com.wyx.blog.aspect.LogAspect            : ---------doBefore------
+2021-05-31 20:57:07.543  INFO 5880 --- [http-nio-8080-exec-10] com.wyx.blog.aspect.LogAspect            : result : index
+2021-05-31 20:57:07.543  INFO 5880 --- [http-nio-8080-exec-10] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-05-31 20:57:08.275  INFO 5880 --- [http-nio-8080-exec-2] com.wyx.blog.aspect.LogAspect            : ---------doBefore------
+2021-05-31 20:57:08.275  INFO 5880 --- [http-nio-8080-exec-2] com.wyx.blog.aspect.LogAspect            : result : index
+2021-05-31 20:57:08.275  INFO 5880 --- [http-nio-8080-exec-2] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-05-31 20:57:08.435  INFO 5880 --- [http-nio-8080-exec-7] com.wyx.blog.aspect.LogAspect            : ---------doBefore------
+2021-05-31 20:57:08.436  INFO 5880 --- [http-nio-8080-exec-7] com.wyx.blog.aspect.LogAspect            : result : index
+2021-05-31 20:57:08.436  INFO 5880 --- [http-nio-8080-exec-7] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-05-31 20:57:08.602  INFO 5880 --- [http-nio-8080-exec-8] com.wyx.blog.aspect.LogAspect            : ---------doBefore------
+2021-05-31 20:57:08.602  INFO 5880 --- [http-nio-8080-exec-8] com.wyx.blog.aspect.LogAspect            : result : index
+2021-05-31 20:57:08.602  INFO 5880 --- [http-nio-8080-exec-8] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-05-31 20:57:08.756  INFO 5880 --- [http-nio-8080-exec-9] com.wyx.blog.aspect.LogAspect            : ---------doBefore------
+2021-05-31 20:57:08.756  INFO 5880 --- [http-nio-8080-exec-9] com.wyx.blog.aspect.LogAspect            : result : index
+2021-05-31 20:57:08.756  INFO 5880 --- [http-nio-8080-exec-9] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-05-31 20:57:08.908  INFO 5880 --- [http-nio-8080-exec-6] com.wyx.blog.aspect.LogAspect            : ---------doBefore------
+2021-05-31 20:57:08.908  INFO 5880 --- [http-nio-8080-exec-6] com.wyx.blog.aspect.LogAspect            : result : index
+2021-05-31 20:57:08.908  INFO 5880 --- [http-nio-8080-exec-6] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-05-31 20:57:09.091  INFO 5880 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : ---------doBefore------
+2021-05-31 20:57:09.092  INFO 5880 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : result : index
+2021-05-31 20:57:09.092  INFO 5880 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-05-31 20:57:34.978  INFO 11984 --- [restartedMain] com.wyx.blog.BlogApplication             : Starting BlogApplication using Java 1.8.0_74 on MACHENIKE-PC with PID 11984 (D:\My_project\people_manage\blog\target\classes started by MK in D:\My_project\people_manage\blog)
+2021-05-31 20:57:34.981 DEBUG 11984 --- [restartedMain] com.wyx.blog.BlogApplication             : Running with Spring Boot v2.5.0, Spring v5.3.7
+2021-05-31 20:57:34.981  INFO 11984 --- [restartedMain] com.wyx.blog.BlogApplication             : The following profiles are active: dev
+2021-05-31 20:57:35.015  INFO 11984 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-31 20:57:35.015  INFO 11984 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-31 20:57:35.513  INFO 11984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-31 20:57:35.526  INFO 11984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2021-05-31 20:57:36.136  INFO 11984 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-31 20:57:36.142  INFO 11984 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-31 20:57:36.142  INFO 11984 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-31 20:57:36.237  INFO 11984 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-31 20:57:36.237  INFO 11984 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1221 ms
+2021-05-31 20:57:36.404  INFO 11984 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-31 20:57:36.475  INFO 11984 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-05-31 20:57:36.555  INFO 11984 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-31 20:57:36.625  INFO 11984 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-05-31 20:57:36.827  INFO 11984 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-05-31 20:57:36.842  INFO 11984 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-05-31 20:57:37.006  INFO 11984 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-31 20:57:37.015  INFO 11984 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-31 20:57:37.098  WARN 11984 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-31 20:57:37.349  INFO 11984 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-05-31 20:57:37.579  INFO 11984 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-05-31 20:57:37.610  INFO 11984 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-31 20:57:37.617  INFO 11984 --- [restartedMain] com.wyx.blog.BlogApplication             : Started BlogApplication in 3.05 seconds (JVM running for 4.308)
+2021-05-31 20:57:37.618  INFO 11984 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-05-31 20:57:37.620  INFO 11984 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-31 20:57:40.092  INFO 11984 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-31 20:57:40.092  INFO 11984 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-31 20:57:40.094  INFO 11984 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-05-31 20:57:40.161  INFO 11984 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : ---------doBefore------
+2021-05-31 20:57:40.170  INFO 11984 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : result : index
+2021-05-31 20:57:40.170  INFO 11984 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-05-31 22:15:02.210  WARN 11984 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18m24s426ms242µs600ns).
+2021-05-31 22:42:58.066  INFO 8364 --- [restartedMain] com.wyx.blog.BlogApplication             : Starting BlogApplication using Java 1.8.0_74 on MACHENIKE-PC with PID 8364 (D:\My_project\people_manage\blog\target\classes started by MK in D:\My_project\people_manage\blog)
+2021-05-31 22:42:58.068 DEBUG 8364 --- [restartedMain] com.wyx.blog.BlogApplication             : Running with Spring Boot v2.5.0, Spring v5.3.7
+2021-05-31 22:42:58.068  INFO 8364 --- [restartedMain] com.wyx.blog.BlogApplication             : The following profiles are active: dev
+2021-05-31 22:42:58.106  INFO 8364 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-31 22:42:58.106  INFO 8364 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-31 22:42:58.516  INFO 8364 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-31 22:42:58.526  INFO 8364 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 JPA repository interfaces.
+2021-05-31 22:42:59.035  INFO 8364 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-31 22:42:59.042  INFO 8364 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-31 22:42:59.042  INFO 8364 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-31 22:42:59.120  INFO 8364 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-31 22:42:59.120  INFO 8364 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1013 ms
+2021-05-31 22:42:59.267  INFO 8364 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-31 22:42:59.340  INFO 8364 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-05-31 22:42:59.414  INFO 8364 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-31 22:42:59.476  INFO 8364 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-05-31 22:42:59.665  INFO 8364 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-05-31 22:42:59.678  INFO 8364 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-05-31 22:42:59.829  INFO 8364 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-31 22:42:59.838  INFO 8364 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-31 22:42:59.919  WARN 8364 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-31 22:43:00.182  INFO 8364 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-05-31 22:43:00.401  INFO 8364 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-05-31 22:43:00.430  INFO 8364 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-31 22:43:00.438  INFO 8364 --- [restartedMain] com.wyx.blog.BlogApplication             : Started BlogApplication in 2.761 seconds (JVM running for 3.979)
+2021-05-31 22:43:00.439  INFO 8364 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-05-31 22:43:00.440  INFO 8364 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-31 22:43:05.258  INFO 8364 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-31 22:43:05.258  INFO 8364 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-31 22:43:05.259  INFO 8364 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-05-31 22:43:05.330  INFO 8364 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/3/hello', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.IndexController.index', args=[3, hello]}
+2021-05-31 22:43:05.337  INFO 8364 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : result : index
+2021-05-31 22:43:05.338  INFO 8364 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : --------doAfter------
