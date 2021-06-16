@@ -41,7 +41,7 @@
 <div class="ui attached pointing menu">
     <div class="ui container">
         <div class="right menu">
-            <a href="#" th:href="@{/admin/types/input}" class="teal  item">新增</a>
+            <a href="#" th:href="@{/admin/tags/input}" class="teal  item">新增</a>
             <a href="#" th:href="@{/admin/tags}" class="teal active item">列表</a>
         </div>
     </div>
@@ -55,6 +55,12 @@
 <div class="m-container-small m-padded-tb-big">
     <div class="ui container">
 
+<!--        标签是否添加成功的返回信息-->
+        <div class="ui mini success message" th:unless="${#strings.isEmpty(message)}">
+            <div class="header">提示</div>
+            <i class="close icon"></i>
+            <h th:text="${message}"></h>
+        </div>
 
         <table class="ui table celled">
             <thead>
@@ -69,19 +75,19 @@
                 <td th:text="${iterStat.count}">1</td>
                 <td th:text="${tag.name}">刻意练习的清单</td>
                 <td>
-                    <a href="#" class="ui mini teal basic button">编辑</a>
-                    <a href="#"  class="ui mini button orange basic ">删除</a>
+                    <a href="#" th:href="@{/admin/tags/{id}/input(id=${tag.id})}" class="ui mini teal basic button">编辑</a>
+                    <a href="#" th:href="@{/admin/tags/{id}/delete(id=${tag.id})}"  class="ui mini button orange basic ">删除</a>
                 </td>
             </tr>
             </tbody>
             <tfoot>
             <tr>
                 <th colspan="6">
-                    <div class="ui floated mini pagination menu">
-                        <a  href="#" class=" blue ui mini basic button " style="margin-right: 0px !important;" > 上一页</a>
-                        <a  href="#" class="blue ui mini basic button " style="margin-right: 0px !important;">  下一页</a>
+                    <div class="ui floated mini pagination menu" th:unless="${page.totalPages}==1">
+                        <a  href="#" th:unless="${page.first}" th:href="@{/admin/tags(page=${page.number-1})}" class=" blue ui mini basic button " style="margin-right: 0px !important;" > 上一页</a>
+                        <a  href="#" th:unless="${page.last}" th:href="@{/admin/tags(page=${page.number+1})}" class="blue ui mini basic button " style="margin-right: 0px !important;">  下一页</a>
                     </div>
-                    <a  href="#" class="ui mini right floated teal basic button ">新增</a>
+                    <a  href="#" th:href="@{/admin/tags/input}" class="ui mini right floated teal basic button ">新增</a>
                 </th>
             </tr>
             </tfoot>
@@ -162,6 +168,7 @@
         on : 'click'
         });
 
+    //设置message可关闭
     $('.message .close')
         .on('click',function(){
             $(this)
