@@ -12,31 +12,43 @@ public class Blog {
 
     @Id
     @GeneratedValue
-    private Long id;                    //主键
-    private String title;               //标题
-    private String content;             //内容
-    private String firstPicture;        //页面首图
-    private String flag;                //标记
-    private Integer views;              //浏览次数
-    private boolean appreciation;       //赞赏是否开启
-    private boolean shareStatement;     //是否开启分享
-    private boolean commentabled;       //是否开启评论
-    private boolean published;          //是否已发布
-    private boolean recommend;          //是否推荐
+    private Long id;
+
+    private String title;
+
+    @Basic(fetch = FetchType.LAZY)
+    @Lob
+    private String content;
+    private String firstPicture;
+    private String flag;
+    private Integer views;
+    private boolean appreciation;
+    private boolean shareStatement;
+    private boolean commentabled;
+    private boolean published;
+    private boolean recommend;
     @Temporal(TemporalType.TIMESTAMP)
-    private Date createTime;            //创建时间
+    private Date createTime;
     @Temporal(TemporalType.TIMESTAMP)
-    private Date updateTime;            //更新时间
+    private Date updateTime;
 
     @ManyToOne
     private Type type;
+
     @ManyToMany(cascade = {CascadeType.PERSIST})
     private List<Tag> tags = new ArrayList<>();
+
+
     @ManyToOne
     private User user;
+
     @OneToMany(mappedBy = "blog")
     private List<Comment> comments = new ArrayList<>();
 
+    @Transient
+    private String tagIds;
+
+    private String description;
 
     public Blog() {
     }
@@ -161,6 +173,7 @@ public class Blog {
         this.tags = tags;
     }
 
+
     public User getUser() {
         return user;
     }
@@ -169,6 +182,7 @@ public class Blog {
         this.user = user;
     }
 
+
     public List<Comment> getComments() {
         return comments;
     }
@@ -176,6 +190,47 @@ public class Blog {
     public void setComments(List<Comment> comments) {
         this.comments = comments;
     }
+
+
+    public String getTagIds() {
+        return tagIds;
+    }
+
+    public void setTagIds(String tagIds) {
+        this.tagIds = tagIds;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public void init() {
+        this.tagIds = tagsToIds(this.getTags());
+    }
+
+    //1,2,3
+    private String tagsToIds(List<Tag> tags) {
+        if (!tags.isEmpty()) {
+            StringBuffer ids = new StringBuffer();
+            boolean flag = false;
+            for (Tag tag : tags) {
+                if (flag) {
+                    ids.append(",");
+                } else {
+                    flag = true;
+                }
+                ids.append(tag.getId());
+            }
+            return ids.toString();
+        } else {
+            return tagIds;
+        }
+    }
+
 
     @Override
     public String toString() {
@@ -193,23 +248,12 @@ public class Blog {
                 ", recommend=" + recommend +
                 ", createTime=" + createTime +
                 ", updateTime=" + updateTime +
+                ", type=" + type +
+                ", tags=" + tags +
+                ", user=" + user +
+                ", comments=" + comments +
+                ", tagIds='" + tagIds + '\'' +
+                ", description='" + description + '\'' +
                 '}';
     }
-
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

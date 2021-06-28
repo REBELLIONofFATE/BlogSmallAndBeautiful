@@ -10,6 +10,9 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Create by WYX on 2021/6/14 8:40
  **/
@@ -31,7 +34,6 @@ public class TagServiceImpl implements TagService {
         return tagRepository.getById(id);
     }
 
-    @Transactional
     @Override
     public Tag getTagByName(String name) {
         return tagRepository.findByName(name);
@@ -43,17 +45,41 @@ public class TagServiceImpl implements TagService {
         return tagRepository.findAll(pageable);
     }
 
+    @Override
+    public List<Tag> listTag() {
+        return tagRepository.findAll();
+    }
+
+
+    @Override
+    public List<Tag> listTag(String ids) { //1,2,3
+        return tagRepository.findAllById(convertToList(ids));
+    }
+
+    private List<Long> convertToList(String ids) {
+        List<Long> list = new ArrayList<>();
+        if (!"".equals(ids) && ids != null) {
+            String[] idarray = ids.split(",");
+            for (int i=0; i < idarray.length;i++) {
+                list.add(new Long(idarray[i]));
+            }
+        }
+        return list;
+    }
+
+
     @Transactional
     @Override
     public Tag updateTag(Long id, Tag tag) {
-        Tag tag1 = tagRepository.getById(id);
-        if(tag1 == null){
-            throw new NotFoundException("无效标签");
+        Tag t = tagRepository.getById(id);
+        if (t == null) {
+            throw new NotFoundException("不存在该标签");
         }
-
-        BeanUtils.copyProperties(tag,tag1);
-        return tagRepository.save(tag1);
+        BeanUtils.copyProperties(tag,t);
+        return tagRepository.save(t);
     }
+
+
 
     @Transactional
     @Override

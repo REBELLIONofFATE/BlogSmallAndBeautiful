@@ -4,12 +4,14 @@ import com.wyx.blog.po.Tag;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
+import java.util.List;
+
 /**
  * Create by WYX on 2021/6/14 8:35
  **/
 public interface TagService {
 
-    Tag saveTag(Tag tag);
+    Tag saveTag(Tag type);
 
     Tag getTag(Long id);
 
@@ -17,7 +19,12 @@ public interface TagService {
 
     Page<Tag> listTag(Pageable pageable);
 
-    Tag updateTag(Long id,Tag tag);
+    List<Tag> listTag();
+
+    List<Tag> listTag(String ids);
+
+    Tag updateTag(Long id, Tag type);
 
     void deleteTag(Long id);
 }
+
