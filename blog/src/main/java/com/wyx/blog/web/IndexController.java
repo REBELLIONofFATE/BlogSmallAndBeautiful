@@ -50,7 +50,16 @@ public class IndexController {
             model.addAttribute("page", blogService.listBlog("%"+query+"%", pageable));
             model.addAttribute("query", query);
             return "search";
-        }
+    }
+
+    @GetMapping("/blog/{id}")
+    public String blog(@PathVariable Long id,Model model){
+        model.addAttribute("blog",blogService.getAndConvert(id));
+
+        return "blog";
+    }
+
+
 
 
 
@@ -66,10 +75,10 @@ public class IndexController {
 
 
     //以后不需要的
-    @GetMapping("/blog")
-    public String blog(){
-        return "blog";
-    }
+//    @GetMapping("/blog")
+//    public String blog(){
+//        return "blog";
+//    }
 
     @GetMapping("/about")
     public String about(){

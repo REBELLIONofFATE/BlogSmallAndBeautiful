@@ -4,6 +4,7 @@ import com.wyx.blog.NotFoundException;
 import com.wyx.blog.dao.BlogRepository;
 import com.wyx.blog.po.Blog;
 import com.wyx.blog.po.Type;
+import com.wyx.blog.util.MarkdownUtils;
 import com.wyx.blog.util.MyBeanUtils;
 import com.wyx.blog.vo.BlogQuery;
 import org.springframework.beans.BeanUtils;
@@ -37,6 +38,19 @@ public class BlogServiceImpl implements BlogService {
     @Override
     public Blog getBlog(Long id) {
         return blogRepository.getById(id);
+    }
+
+    @Override
+    public Blog getAndConvert(Long id) {
+        Blog blog = blogRepository.getById(id);
+        if(blog == null){
+            throw new NotFoundException("改博客id不存在");
+        }
+        Blog b = new Blog();
+        BeanUtils.copyProperties(blog,b);
+        String content = b.getContent();
+        b.setContent(MarkdownUtils.markdownToHtmlExtensions(content));
+        return b;
     }
 
     @Override

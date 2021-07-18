@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head th:replace="_fragments ::head(~{::title})")>
     <meta charset="UTF-8">
     <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
@@ -48,29 +48,29 @@
         <div class="ui top attached segment">
             <div class="ui mini horizontal link list">
                 <div class="item">
-                    <img src="https://picsum.photos/id/1/100/100?images=1000" alt=""  class="ui avatar image">
-                    <div class="content"><a  class="header" href="#">武玉祥</a></div>
+                    <img th:src="@{${blog.user.avatar}}" src="https://picsum.photos/id/1/100/100?images=1000" alt=""  class="ui avatar image">
+                    <div class="content"><a th:text="${blog.user.nickname}"  class="header" href="#">武玉祥</a></div>
                 </div>
                 <div class="item">
-                    <i class="calendar icon"></i> 2017-10-01
+                    <i class="calendar icon"></i> <apan th:text="${#dates.format(blog.updateTime,'yyyy-MM-dd')}"> 2017-10-01</apan>
                 </div>
                 <div class="item">
-                    <i class="eye icon"></i>235
+                    <i class="eye icon"></i><span>&nbsp&nbsp</span><span th:text="${blog.views}"> 235</span>
                 </div>
             </div>
         </div>
         <!----图片--->
         <div class="ui attached segment">
-            <img src="https://picsum.photos/id/1003/800/700" alt="" class="ui fluid rounded image">
+            <img src="https://picsum.photos/id/1003/800/700" th:src="@{${blog.firstPicture}}" alt="" class="ui fluid rounded image">
         </div>
         <div class="ui  attached  segment">
             <!----内容--->
             <div class="ui right aligned basic segment">
-                <div class="ui orange right basic label">原创</div>
+                <div class="ui orange right basic label" th:text="${blog.flag}">原创</div>
             </div>
-            <h2 class="ui center aligned header">关于自律的清单</h2>
+            <h2 class="ui center aligned header" th:text="${blog.title}">关于自律的清单</h2>
             <!--文章内容content-->
-            <div id="content" class="typo js-toc-content typo-selection m-padded-lr-responsive m-padded-tb-large">
+            <div th:utext="${blog.content}" id="content" class="typo js-toc-content typo-selection m-padded-lr-responsive m-padded-tb-large">
 
                 <h2 id="section1">一、关于 <i class="serif">Typo.css</i></h2>
 
@@ -434,7 +434,7 @@ h5,h6{font-size:1em;}
 
             <!--- 标签-->
             <div class="m-padded-lr">
-                <div class="ui basic teal left pointing label">方法论</div>
+                <div class="ui basic teal left pointing label" th:each="tag :${blog.tags}" th:text="${tag.name}">方法论</div>
             </div>
             <!-- 赞赏--->
             <div class="ui center aligned basic segment">
@@ -445,11 +445,11 @@ h5,h6{font-size:1em;}
                 <div class="ui orange basic label">
                     <div class="ui images" style="font-size: inherit !important;">
                         <div class="image">
-                            <img src="../static/images/wechat.png" alt="" class="ui rounded bordered image" style="width: 120px">
+                            <img src="../static/images/wechat.png" th:src="@{/images/wechat.png}" alt="" class="ui rounded bordered image" style="width: 120px">
                             <div>支付宝</div>
                         </div>
                         <div class="image">
-                            <img src="../static/images/wechat.png" alt="" class="ui rounded bordered image" style="width: 120px">
+                            <img src="../static/images/wechat.png" th:src="@{/images/wechat.png}" alt="" class="ui rounded bordered image" style="width: 120px">
                             <div>微信</div>
                         </div>
                     </div>
@@ -461,13 +461,13 @@ h5,h6{font-size:1em;}
         <div class="ui attached positive message">
             <div class="ui middle aligned grid">
                 <div class="eleven wide column">
-                    <li>作者：武玉祥（联系作者）</li>
-                    <li>发表时间：2017-10-02 09：08</li>
+                    <li>作者：<span th:text="${blog.user.nickname}">武玉祥</span><a href="#" th:href="@{/about}">（联系作者）</a></li>
+                    <li>发表时间：<span th:text="${#dates.format(blog.updateTime,'yyyy-MM-dd HH:mm')}">2017-10-02 09：08</span></li>
                     <li>版权声明：自由转载-非商用-非衍生-保持著作（创意共享3.0许可证）</li>
                     <li>公众号转载：请在文末添加作者公众号二维码</li>
                 </div>
                 <div class="five wide column">
-                    <img src="../static/images/wechat.png" alt="" class="ui rounded right floated bordered image" style="width: 110px">
+                    <img src="../static/images/wechat.png" th:src="@{/images/wechat.png}" alt="" class="ui rounded right floated bordered image" style="width: 110px">
                 </div>
             </div>
         </div>
@@ -664,7 +664,7 @@ h5,h6{font-size:1em;}
 
 
 
-<script>
+<script th:inline="javascript">
 
     tocbot.init({
         // Where to render the table of contents.
@@ -700,8 +700,12 @@ h5,h6{font-size:1em;}
         position: 'left center'
     });
 
+    //根据网址生成二维码再微信扫之后打开相应网页
+    var serurl = "127.0.0.1:8080";
+    var url = /*[[@{/blog/{id}(id=${blog.id})}]]*/"";
     var qrcode = new QRCode("qrcode", {
-        text: "http://jindo.dev.naver.com/collie",
+        // text: "https://www.baidu.com/",
+        text: serurl+url,
         width: 110,
         height: 110,
         colorDark : "#000000",
