@@ -45,6 +45,7 @@ public class Blog {
     @OneToMany(mappedBy = "blog")
     private List<Comment> comments = new ArrayList<>();
 
+//    作为临时变量,不持久化到数据库,只是用来接受前端传递过来tag相应信息,@Transient表示生成数据库的相应字段
     @Transient
     private String tagIds;
 

@@ -55,6 +55,7 @@
 <div  class="m-container m-padded-tb-big">
     <div class="ui container">
         <form id="blog-form" action="#" th:object="${blog}" th:action="@{/admin/blogs}" method="post" class="ui form">
+<!--            隐含的输入域,传入是否发布状态与id值-->
             <input type="hidden" name="published" th:value="*{published}">
             <input type="hidden" name="id" th:value="*{id}">
             <div class="required field">
@@ -97,6 +98,7 @@
                     <div class="ui left labeled action input">
                         <label class="ui compact teal basic label">标签</label>
                         <div class="ui fluid selection multiple search  dropdown">
+<!--                            tag可以为空-->
                             <input type="hidden" name="tagIds" th:value="*{tagIds}" >
                             <i class="dropdown icon"></i>
                             <div class="default text">标签</div>
@@ -240,12 +242,13 @@
         on : 'click'
     });
 
+    //根据提交表单时点击的按钮不同来为发布状态设置不同的值
     $('#save-btn').click(function (){
         $('[name="published"]').val(false);
         $('#blog-form').submit();
     })
     $('#publish-btn').click(function (){
-        $('[name="publlished"]').val(true);
+        $('[name="published"]').val(true);
         $('#blog-form').submit();
     })
 

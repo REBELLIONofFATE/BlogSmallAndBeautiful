@@ -12,6 +12,7 @@ import sun.security.provider.certpath.OCSPResponse;
 
 import javax.servlet.http.HttpServletRequest;
 
+//拦截器
 @ControllerAdvice
 public class ControllerExceptionHandler {
 
