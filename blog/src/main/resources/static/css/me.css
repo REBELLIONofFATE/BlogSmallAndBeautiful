@@ -177,6 +177,10 @@ display: inline-block !important;
     color: #333 !important;
 }
 
+.m-teal{
+    color: #00b5ad !important;
+}
+
 .m-mbile-show{
     display: none !important;
 }

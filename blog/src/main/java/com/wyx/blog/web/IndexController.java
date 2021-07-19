@@ -84,21 +84,21 @@ public class IndexController {
     public String about(){
         return "about";
     }
-
-    @GetMapping("/tags")
-    public String tags(){
-        return "tags";
-    }
-
-    @GetMapping("/types")
-    public String types(){
-        return "types";
-    }
-
-    @GetMapping("/archives")
-    public String archives(){
-        return "archives";
-    }
+//
+//    @GetMapping("/tags")
+//    public String tags(){
+//        return "tags";
+//    }
+//
+//    @GetMapping("/types")
+//    public String types(){
+//        return "types";
+//    }
+//
+//    @GetMapping("/archives")
+//    public String archives(){
+//        return "archives";
+//    }
 
 
 }
