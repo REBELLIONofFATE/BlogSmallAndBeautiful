@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head th:replace="_fragments :: head(~{::title})">
     <meta charset="UTF-8">
     <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
@@ -15,11 +15,11 @@
     <div class="ui container">
         <div class="ui inverted secondary stackable menu">
             <h2 class="ui teal header item">Blog</h2>
-            <a href="#"class="m-item item m-mobile-hide"> <i class="small home icon"></i> 首页</a>
-            <a href="#"class="m-item item m-mobile-hide"><i class="small idea icon"></i> 分类</a>
-            <a href="#"class=" m-item item m-mobile-hide"><i class="small tags icon"></i> 标签</a>
-            <a href="#"class="active m-item item m-mobile-hide"><i class="small clone icon"></i> 归档</a>
-            <a href="#"class="m-item item m-mobile-hide"><i class="small info icon"></i> 关于我</a>
+            <a href="#" class="m-item item m-mobile-hide"> <i class="small home icon"></i> 首页</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="small idea icon"></i> 分类</a>
+            <a href="#" class=" m-item item m-mobile-hide"><i class="small tags icon"></i> 标签</a>
+            <a href="#" class="active m-item item m-mobile-hide"><i class="small clone icon"></i> 归档</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="small info icon"></i> 关于我</a>
             <div class="right m-item item m-mobile-hide">
                 <div class="ui icon transparent inverted input m-margin-tb-tiny">
                     <input type="text" placeholder="Search...">
@@ -34,9 +34,6 @@
 </nav>
 
 
-
-
-
 <!-- 中间内容-->
 <div class="m-container-small m-padded-tb-big">
     <div class="ui container">
@@ -47,42 +44,25 @@
                     <h3 class="ui teal header">分类</h3>
                 </div>
                 <div class="right aligned column">
-                    共<h2 class="ui orange header m-inline-block">114</h2>篇
+                    共<h2 class="ui orange header m-inline-block" th:text="${blogCount}">114</h2>篇
                 </div>
             </div>
         </div>
-        <h3 class='ui center aligned header'>2017</h3>
-        <div class="ui fluid vertical menu">
-            <a class="item" href="#" target="_blank">
-                <span>
-                    <i class=" teal circle icon"></i>关于刻意练习的清单
-                    <div class="ui mini teal basic left pointing label">9月03</div>
-                </span>
-                <div class="ui orange m-padded-tb-small basic left pointing label">原创</div>
-            </a>
-            <a class="item" href="#" target="_blank">
-                <span>
-                    <i class=" teal circle icon"></i>关于刻意练习的清单
-                    <div class="ui mini teal basic left pointing label">9月03</div>
-                </span>
-                <div class="ui orange m-padded-tb-small basic left pointing label">原创</div>
-            </a>
-            <a class="item" href="#" target="_blank">
-                <span>
-                    <i class=" teal circle icon"></i>关于刻意练习的清单
-                    <div class="ui mini teal basic left pointing label">9月03</div>
-                </span>
-                <div class="ui orange m-padded-tb-small basic left pointing label">原创</div>
-            </a>
-            <a class="item" href="#" target="_blank">
-                <span>
-                    <i class=" teal circle icon"></i>关于刻意练习的清单
-                    <div class="ui mini teal basic left pointing label">9月03</div>
-                </span>
-                <div class="ui orange m-padded-tb-small basic left pointing label">原创</div>
-            </a>
-        </div>
 
+        <th:block th:each="item : ${archiveMap}">
+            <h3 class='ui center aligned header' th:text="${item.key}">2017</h3>
+            <div class="ui fluid vertical menu">
+                <a class="item" href="#" target="_blank" th:href="@{/blog/{id}(id=${blog.id})}" th:each="blog :${item.value}">
+                <span>
+                    <i class=" teal circle icon"></i> <span th:text="${blog.title}">关于刻意练习的清单</span>
+                    <div class="ui mini teal basic left pointing label" th:text="${#dates.format(blog.updateTime,'MMMdd')}">9月03</div>
+                </span>
+                    <div class="ui orange m-padded-tb-small basic left pointing label" th:text="${blog.flag}">原创</div>
+                </a>
+
+            </div>
+        </th:block>
+        <!--/*-->
         <h3 class='ui center aligned header'>2016</h3>
         <div class="ui fluid vertical menu">
             <a class="item" href="#" target="_blank">
@@ -114,7 +94,7 @@
                 <div class="ui orange m-padded-tb-small basic left pointing label">原创</div>
             </a>
         </div>
-
+        <!--*/-->
 
     </div>
 </div>
@@ -125,7 +105,6 @@
 <br>
 <br>
 <br>
-
 
 
 <!----最底部footer---->
@@ -165,10 +144,10 @@
             </div>
         </div>
         <div class="ui inverted section divider"></div>
-        <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright © 1998 - 2020 xiaowu. All Rights Reserved. 作者 版权所有</p>
+        <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright © 1998 - 2020 xiaowu. All Rights Reserved. 作者
+            版权所有</p>
     </div>
 </footer>
-
 
 
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
@@ -179,14 +158,12 @@
 
 <script>
 
-    $('.menu.toggle').click(function(){
+    $('.menu.toggle').click(function () {
         $('.m-item').toggleClass('m-mobile-hide')
     });
 
 
 </script>
-
-
 
 
 </body>

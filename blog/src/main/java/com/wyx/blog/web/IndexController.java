@@ -28,12 +28,12 @@ public class IndexController {
     private TagService tagService;
 
     @GetMapping("/")
-    public String index(@PageableDefault(size=8,sort={"updateTime"}, direction= Sort.Direction.DESC) Pageable pageable, Model model){
+    public String index(@PageableDefault(size = 8, sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable, Model model) {
 
-        model.addAttribute("page",blogService.listBlog(pageable));
-        model.addAttribute("types",typeService.listTypeTop(6));
-        model.addAttribute("tags",tagService.listTagTop(10));
-        model.addAttribute("recommendBlogs" ,blogService.listRecommendBlogTop(8));
+        model.addAttribute("page", blogService.listBlog(pageable));
+        model.addAttribute("types", typeService.listTypeTop(6));
+        model.addAttribute("tags", tagService.listTagTop(10));
+        model.addAttribute("recommendBlogs", blogService.listRecommendBlogTop(8));
         return "index";
     }
 
@@ -47,38 +47,24 @@ public class IndexController {
 
     @PostMapping("/search")
     public String search(@PageableDefault(size = 8, sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable,
-                        @RequestParam String query, Model model) {
-            model.addAttribute("page", blogService.listBlog("%"+query+"%", pageable));
-            model.addAttribute("query", query);
-            return "search";
+                         @RequestParam String query, Model model) {
+        model.addAttribute("page", blogService.listBlog("%" + query + "%", pageable));
+        model.addAttribute("query", query);
+        return "search";
     }
 
     @GetMapping("/blog/{id}")
-    public String blog(@PathVariable Long id,Model model){
-        model.addAttribute("blog",blogService.getAndConvert(id));
+    public String blog(@PathVariable Long id, Model model) {
+        model.addAttribute("blog", blogService.getAndConvert(id));
 
         return "blog";
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     //以后不需要的
 
     @GetMapping("/about")
-    public String about(){
+    public String about() {
         return "about";
     }
 
@@ -87,16 +73,8 @@ public class IndexController {
 //        return "tags";
 //    }
 
-    @GetMapping("/archives")
-    public String archives(){
-        return "archives";
-    }
-
 
 }
-
-
-
 
 
 
