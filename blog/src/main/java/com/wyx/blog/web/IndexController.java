@@ -44,6 +44,7 @@ public class IndexController {
 //        model.addAttribute("query",query);
 //        return "search";
 //    }
+
     @PostMapping("/search")
     public String search(@PageableDefault(size = 8, sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable,
                         @RequestParam String query, Model model) {
@@ -75,30 +76,21 @@ public class IndexController {
 
 
     //以后不需要的
-//    @GetMapping("/blog")
-//    public String blog(){
-//        return "blog";
-//    }
 
     @GetMapping("/about")
     public String about(){
         return "about";
     }
-//
+
 //    @GetMapping("/tags")
 //    public String tags(){
 //        return "tags";
 //    }
-//
-//    @GetMapping("/types")
-//    public String types(){
-//        return "types";
-//    }
-//
-//    @GetMapping("/archives")
-//    public String archives(){
-//        return "archives";
-//    }
+
+    @GetMapping("/archives")
+    public String archives(){
+        return "archives";
+    }
 
 
 }
