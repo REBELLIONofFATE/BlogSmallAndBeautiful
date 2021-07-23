@@ -883,3 +883,782 @@ Caused by: org.hibernate.QueryException: No data type for node: org.hibernate.hq
 2021-07-23 00:34:37.490  INFO 11216 --- [http-nio-8080-exec-5] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.ArchiveShowController.archives', args=[{}]}
 2021-07-23 00:34:37.509  INFO 11216 --- [http-nio-8080-exec-5] com.wyx.blog.aspect.LogAspect            : result : archives
 2021-07-23 00:34:37.509  INFO 11216 --- [http-nio-8080-exec-5] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 08:29:27.203  INFO 12364 --- [restartedMain] com.wyx.blog.BlogApplication             : Starting BlogApplication using Java 1.8.0_74 on MACHENIKE-PC with PID 12364 (D:\My_project\Project_Spring_Blog\project_two\blog\target\classes started by MK in D:\My_project\Project_Spring_Blog\project_two\blog)
+2021-07-23 08:29:27.206 DEBUG 12364 --- [restartedMain] com.wyx.blog.BlogApplication             : Running with Spring Boot v2.5.0, Spring v5.3.7
+2021-07-23 08:29:27.206  INFO 12364 --- [restartedMain] com.wyx.blog.BlogApplication             : The following profiles are active: dev
+2021-07-23 08:29:27.263  INFO 12364 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-23 08:29:27.263  INFO 12364 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-23 08:29:28.114  INFO 12364 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-23 08:29:28.202  INFO 12364 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 80 ms. Found 5 JPA repository interfaces.
+2021-07-23 08:29:29.045  INFO 12364 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-07-23 08:29:29.052  INFO 12364 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-23 08:29:29.052  INFO 12364 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-07-23 08:29:29.135  INFO 12364 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-23 08:29:29.135  INFO 12364 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1871 ms
+2021-07-23 08:29:29.285  INFO 12364 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-23 08:29:29.326  INFO 12364 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-07-23 08:29:29.472  INFO 12364 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-23 08:29:29.580  INFO 12364 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-07-23 08:29:29.867  INFO 12364 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-07-23 08:29:29.883  INFO 12364 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-07-23 08:29:30.631  INFO 12364 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-23 08:29:30.639  INFO 12364 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-23 08:29:31.658  WARN 12364 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-23 08:29:31.926  INFO 12364 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-07-23 08:29:32.275  INFO 12364 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-07-23 08:29:32.310  INFO 12364 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-23 08:29:32.318  INFO 12364 --- [restartedMain] com.wyx.blog.BlogApplication             : Started BlogApplication in 5.732 seconds (JVM running for 7.237)
+2021-07-23 08:29:32.319  INFO 12364 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-07-23 08:29:32.321  INFO 12364 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-07-23 08:29:35.885  INFO 12364 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-23 08:29:35.886  INFO 12364 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-07-23 08:29:35.886  INFO 12364 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-07-23 08:29:35.914  INFO 12364 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2021-07-23 08:29:36.019  WARN 12364 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-07-23 08:29:36.028  WARN 12364 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-07-23 08:29:36.037  INFO 12364 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : result : index
+2021-07-23 08:29:36.038  INFO 12364 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 08:29:36.784  INFO 12364 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.IndexController.newblogs', args=[{}]}
+2021-07-23 08:29:36.794  INFO 12364 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : result : _fragments :: newblogList
+2021-07-23 08:29:36.795  INFO 12364 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 08:37:37.201  INFO 12656 --- [restartedMain] com.wyx.blog.BlogApplication             : Starting BlogApplication using Java 1.8.0_74 on MACHENIKE-PC with PID 12656 (D:\My_project\Project_Spring_Blog\project_two\blog\target\classes started by MK in D:\My_project\Project_Spring_Blog\project_two\blog)
+2021-07-23 08:37:37.203 DEBUG 12656 --- [restartedMain] com.wyx.blog.BlogApplication             : Running with Spring Boot v2.5.0, Spring v5.3.7
+2021-07-23 08:37:37.203  INFO 12656 --- [restartedMain] com.wyx.blog.BlogApplication             : The following profiles are active: dev
+2021-07-23 08:37:37.247  INFO 12656 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-23 08:37:37.247  INFO 12656 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-23 08:37:37.833  INFO 12656 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-23 08:37:37.912  INFO 12656 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 5 JPA repository interfaces.
+2021-07-23 08:37:38.589  INFO 12656 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-07-23 08:37:38.596  INFO 12656 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-23 08:37:38.596  INFO 12656 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-07-23 08:37:38.671  INFO 12656 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-23 08:37:38.672  INFO 12656 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1424 ms
+2021-07-23 08:37:38.826  INFO 12656 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-23 08:37:38.866  INFO 12656 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-07-23 08:37:38.965  INFO 12656 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-23 08:37:39.038  INFO 12656 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-07-23 08:37:39.264  INFO 12656 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-07-23 08:37:39.279  INFO 12656 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-07-23 08:37:39.983  INFO 12656 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-23 08:37:39.993  INFO 12656 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-23 08:37:40.946  WARN 12656 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-23 08:37:41.223  INFO 12656 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-07-23 08:37:41.558  INFO 12656 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-07-23 08:37:41.594  INFO 12656 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-23 08:37:41.601  INFO 12656 --- [restartedMain] com.wyx.blog.BlogApplication             : Started BlogApplication in 4.851 seconds (JVM running for 6.301)
+2021-07-23 08:37:41.602  INFO 12656 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-07-23 08:37:41.604  INFO 12656 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-07-23 08:37:47.709  INFO 12656 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-23 08:37:47.709  INFO 12656 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-07-23 08:37:47.710  INFO 12656 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-07-23 08:37:47.754  INFO 12656 --- [http-nio-8080-exec-2] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2021-07-23 08:37:47.852  WARN 12656 --- [http-nio-8080-exec-2] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-07-23 08:37:47.863  WARN 12656 --- [http-nio-8080-exec-2] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-07-23 08:37:47.869  INFO 12656 --- [http-nio-8080-exec-2] com.wyx.blog.aspect.LogAspect            : result : index
+2021-07-23 08:37:47.870  INFO 12656 --- [http-nio-8080-exec-2] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 08:37:48.327  INFO 12656 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.IndexController.newblogs', args=[{}]}
+2021-07-23 08:37:48.334  INFO 12656 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : result : _fragments :: newblogList
+2021-07-23 08:37:48.335  INFO 12656 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 08:38:12.531  INFO 376 --- [restartedMain] com.wyx.blog.BlogApplication             : Starting BlogApplication using Java 1.8.0_74 on MACHENIKE-PC with PID 376 (D:\My_project\Project_Spring_Blog\project_two\blog\target\classes started by MK in D:\My_project\Project_Spring_Blog\project_two\blog)
+2021-07-23 08:38:12.533 DEBUG 376 --- [restartedMain] com.wyx.blog.BlogApplication             : Running with Spring Boot v2.5.0, Spring v5.3.7
+2021-07-23 08:38:12.533  INFO 376 --- [restartedMain] com.wyx.blog.BlogApplication             : The following profiles are active: dev
+2021-07-23 08:38:12.571  INFO 376 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-23 08:38:12.572  INFO 376 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-23 08:38:13.168  INFO 376 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-23 08:38:13.261  INFO 376 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81 ms. Found 5 JPA repository interfaces.
+2021-07-23 08:38:13.906  INFO 376 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-07-23 08:38:13.912  INFO 376 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-23 08:38:13.912  INFO 376 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-07-23 08:38:13.982  INFO 376 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-23 08:38:13.982  INFO 376 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1409 ms
+2021-07-23 08:38:14.095  INFO 376 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-23 08:38:14.127  INFO 376 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-07-23 08:38:14.204  INFO 376 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-23 08:38:14.268  INFO 376 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-07-23 08:38:14.468  INFO 376 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-07-23 08:38:14.482  INFO 376 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-07-23 08:38:15.063  INFO 376 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-23 08:38:15.069  INFO 376 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-23 08:38:15.926  WARN 376 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-23 08:38:16.227  INFO 376 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-07-23 08:38:16.554  INFO 376 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-07-23 08:38:16.593  INFO 376 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-23 08:38:16.602  INFO 376 --- [restartedMain] com.wyx.blog.BlogApplication             : Started BlogApplication in 4.476 seconds (JVM running for 5.717)
+2021-07-23 08:38:16.604  INFO 376 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-07-23 08:38:16.606  INFO 376 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-07-23 08:49:47.257  INFO 376 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-23 08:49:47.257  INFO 376 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-07-23 08:49:47.259  INFO 376 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-07-23 08:49:47.288  INFO 376 --- [http-nio-8080-exec-2] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/blog/40', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.IndexController.blog', args=[40, {}]}
+2021-07-23 08:49:47.431  INFO 376 --- [http-nio-8080-exec-2] com.wyx.blog.aspect.LogAspect            : result : blog
+2021-07-23 08:49:47.431  INFO 376 --- [http-nio-8080-exec-2] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 08:49:47.954  INFO 376 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.IndexController.newblogs', args=[{}]}
+2021-07-23 08:49:47.966  INFO 376 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : result : _fragments :: newblogList
+2021-07-23 08:49:47.966  INFO 376 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 08:49:48.013  INFO 376 --- [http-nio-8080-exec-5] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/comments/40', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.CommentController.comments', args=[40, {}]}
+2021-07-23 08:49:48.051  INFO 376 --- [http-nio-8080-exec-5] com.wyx.blog.aspect.LogAspect            : result : blog :: commentList
+2021-07-23 08:49:48.051  INFO 376 --- [http-nio-8080-exec-5] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 08:49:53.389  INFO 376 --- [http-nio-8080-exec-6] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2021-07-23 08:49:53.415  WARN 376 --- [http-nio-8080-exec-6] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-07-23 08:49:53.423  WARN 376 --- [http-nio-8080-exec-6] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-07-23 08:49:53.430  INFO 376 --- [http-nio-8080-exec-6] com.wyx.blog.aspect.LogAspect            : result : index
+2021-07-23 08:49:53.430  INFO 376 --- [http-nio-8080-exec-6] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 08:49:53.707  INFO 376 --- [http-nio-8080-exec-9] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.IndexController.newblogs', args=[{}]}
+2021-07-23 08:49:53.715  INFO 376 --- [http-nio-8080-exec-9] com.wyx.blog.aspect.LogAspect            : result : _fragments :: newblogList
+2021-07-23 08:49:53.715  INFO 376 --- [http-nio-8080-exec-9] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 08:52:14.830  INFO 12208 --- [restartedMain] com.wyx.blog.BlogApplication             : Starting BlogApplication using Java 1.8.0_74 on MACHENIKE-PC with PID 12208 (D:\My_project\Project_Spring_Blog\project_two\blog\target\classes started by MK in D:\My_project\Project_Spring_Blog\project_two\blog)
+2021-07-23 08:52:14.833 DEBUG 12208 --- [restartedMain] com.wyx.blog.BlogApplication             : Running with Spring Boot v2.5.0, Spring v5.3.7
+2021-07-23 08:52:14.833  INFO 12208 --- [restartedMain] com.wyx.blog.BlogApplication             : The following profiles are active: dev
+2021-07-23 08:52:14.874  INFO 12208 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-23 08:52:14.875  INFO 12208 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-23 08:52:15.612  INFO 12208 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-23 08:52:15.699  INFO 12208 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 76 ms. Found 5 JPA repository interfaces.
+2021-07-23 08:52:16.490  INFO 12208 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-07-23 08:52:16.498  INFO 12208 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-23 08:52:16.498  INFO 12208 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-07-23 08:52:16.591  INFO 12208 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-23 08:52:16.592  INFO 12208 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1716 ms
+2021-07-23 08:52:16.766  INFO 12208 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-23 08:52:16.833  INFO 12208 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-07-23 08:52:16.950  INFO 12208 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-23 08:52:17.033  INFO 12208 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-07-23 08:52:17.304  INFO 12208 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-07-23 08:52:17.321  INFO 12208 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-07-23 08:52:18.196  INFO 12208 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-23 08:52:18.206  INFO 12208 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-23 08:52:19.008  WARN 12208 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-23 08:52:19.440  INFO 12208 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-07-23 08:52:19.713  INFO 12208 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-07-23 08:52:19.744  INFO 12208 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-23 08:52:19.755  INFO 12208 --- [restartedMain] com.wyx.blog.BlogApplication             : Started BlogApplication in 5.439 seconds (JVM running for 6.917)
+2021-07-23 08:52:19.756  INFO 12208 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-07-23 08:52:19.758  INFO 12208 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-07-23 08:52:19.787  INFO 12208 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-23 08:52:19.788  INFO 12208 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-07-23 08:52:19.789  INFO 12208 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-07-23 08:52:19.815  INFO 12208 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/', ip='127.0.0.1', classMethod='com.wyx.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2021-07-23 08:52:19.902  WARN 12208 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-07-23 08:52:19.921  WARN 12208 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-07-23 08:52:19.929  INFO 12208 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : result : index
+2021-07-23 08:52:19.930  INFO 12208 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 08:52:20.295 ERROR 12208 --- [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "index": An error happened during template parsing (template: "class path resource [templates/index.html]")
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/index.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1396)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1141)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.attoparser.ParseException: Exception evaluating SpringEL expression: "tag.id" (template: "index" - line 124, col 41)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 48 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "tag.id" (template: "index" - line 124, col 41)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.expression.LinkExpression.resolveParameters(LinkExpression.java:339)
+	at org.thymeleaf.standard.expression.LinkExpression.executeLinkExpression(LinkExpression.java:285)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:85)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164)
+	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169)
+	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412)
+	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473)
+	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 50 common frames omitted
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'id' cannot be found on null
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:213)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:51)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:406)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:337)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
+	... 80 common frames omitted
+
+2021-07-23 08:52:20.307 ERROR 12208 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/index.html]")] with root cause
+
+org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'id' cannot be found on null
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:213)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:51)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:406)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:337)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.expression.LinkExpression.resolveParameters(LinkExpression.java:339)
+	at org.thymeleaf.standard.expression.LinkExpression.executeLinkExpression(LinkExpression.java:285)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:85)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164)
+	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169)
+	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412)
+	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473)
+	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1396)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1141)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2021-07-23 08:52:20.348 ERROR 12208 --- [http-nio-8080-exec-1] s.e.ErrorMvcAutoConfiguration$StaticView : Cannot render error page for request [/] and exception [An error happened during template parsing (template: "class path resource [templates/index.html]")] as the response has already been committed. As a result, the response may have the wrong status code.
+2021-07-23 08:52:51.152  INFO 12640 --- [restartedMain] com.wyx.blog.BlogApplication             : Starting BlogApplication using Java 1.8.0_74 on MACHENIKE-PC with PID 12640 (D:\My_project\Project_Spring_Blog\project_two\blog\target\classes started by MK in D:\My_project\Project_Spring_Blog\project_two\blog)
+2021-07-23 08:52:51.155 DEBUG 12640 --- [restartedMain] com.wyx.blog.BlogApplication             : Running with Spring Boot v2.5.0, Spring v5.3.7
+2021-07-23 08:52:51.155  INFO 12640 --- [restartedMain] com.wyx.blog.BlogApplication             : The following profiles are active: dev
+2021-07-23 08:52:51.200  INFO 12640 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-23 08:52:51.200  INFO 12640 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-23 08:52:51.865  INFO 12640 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-23 08:52:51.952  INFO 12640 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78 ms. Found 5 JPA repository interfaces.
+2021-07-23 08:52:52.787  INFO 12640 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-07-23 08:52:52.793  INFO 12640 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-23 08:52:52.793  INFO 12640 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-07-23 08:52:52.866  INFO 12640 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-23 08:52:52.867  INFO 12640 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1666 ms
+2021-07-23 08:52:53.008  INFO 12640 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-23 08:52:53.044  INFO 12640 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-07-23 08:52:53.127  INFO 12640 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-23 08:52:53.199  INFO 12640 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-07-23 08:52:53.414  INFO 12640 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-07-23 08:52:53.428  INFO 12640 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-07-23 08:52:54.094  INFO 12640 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-23 08:52:54.102  INFO 12640 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-23 08:52:54.974  WARN 12640 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-23 08:52:55.217  INFO 12640 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-07-23 08:52:55.489  INFO 12640 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-07-23 08:52:55.521  INFO 12640 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-23 08:52:55.528  INFO 12640 --- [restartedMain] com.wyx.blog.BlogApplication             : Started BlogApplication in 4.842 seconds (JVM running for 6.443)
+2021-07-23 08:52:55.529  INFO 12640 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-07-23 08:52:55.531  INFO 12640 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-07-23 08:52:55.648  INFO 12640 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-23 08:52:55.648  INFO 12640 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-07-23 08:52:55.649  INFO 12640 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-07-23 08:52:55.676  INFO 12640 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2021-07-23 08:52:55.768  WARN 12640 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-07-23 08:52:55.782  WARN 12640 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-07-23 08:52:55.789  INFO 12640 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : result : index
+2021-07-23 08:52:55.789  INFO 12640 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 08:52:56.401  INFO 12640 --- [http-nio-8080-exec-2] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.IndexController.newblogs', args=[{}]}
+2021-07-23 08:52:56.410  INFO 12640 --- [http-nio-8080-exec-2] com.wyx.blog.aspect.LogAspect            : result : _fragments :: newblogList
+2021-07-23 08:52:56.410  INFO 12640 --- [http-nio-8080-exec-2] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 08:52:58.142  INFO 12640 --- [http-nio-8080-exec-3] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/types/3', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 3, {}]}
+2021-07-23 08:52:58.156  INFO 12640 --- [http-nio-8080-exec-3] com.wyx.blog.aspect.LogAspect            : result : types
+2021-07-23 08:52:58.156  INFO 12640 --- [http-nio-8080-exec-3] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 08:53:01.762  INFO 12640 --- [http-nio-8080-exec-10] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/types/1', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 1, {}]}
+2021-07-23 08:53:01.771  INFO 12640 --- [http-nio-8080-exec-10] com.wyx.blog.aspect.LogAspect            : result : types
+2021-07-23 08:53:01.771  INFO 12640 --- [http-nio-8080-exec-10] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 08:53:04.948  INFO 12640 --- [http-nio-8080-exec-9] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/types/4', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 4, {}]}
+2021-07-23 08:53:04.956  INFO 12640 --- [http-nio-8080-exec-9] com.wyx.blog.aspect.LogAspect            : result : types
+2021-07-23 08:53:04.956  INFO 12640 --- [http-nio-8080-exec-9] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 08:53:08.184  INFO 12640 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/types/2', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 2, {}]}
+2021-07-23 08:53:08.196  INFO 12640 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : result : types
+2021-07-23 08:53:08.196  INFO 12640 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 08:53:11.290  INFO 12640 --- [http-nio-8080-exec-8] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/types/29', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 29, {}]}
+2021-07-23 08:53:11.298  INFO 12640 --- [http-nio-8080-exec-8] com.wyx.blog.aspect.LogAspect            : result : types
+2021-07-23 08:53:11.299  INFO 12640 --- [http-nio-8080-exec-8] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 08:53:15.207  INFO 12640 --- [http-nio-8080-exec-4] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/types/5', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 5, {}]}
+2021-07-23 08:53:15.214  INFO 12640 --- [http-nio-8080-exec-4] com.wyx.blog.aspect.LogAspect            : result : types
+2021-07-23 08:53:15.214  INFO 12640 --- [http-nio-8080-exec-4] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 08:53:21.639  INFO 12640 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2021-07-23 08:53:21.656  INFO 12640 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : result : index
+2021-07-23 08:53:21.657  INFO 12640 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 08:53:21.891  INFO 12640 --- [http-nio-8080-exec-3] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.IndexController.newblogs', args=[{}]}
+2021-07-23 08:53:21.897  INFO 12640 --- [http-nio-8080-exec-3] com.wyx.blog.aspect.LogAspect            : result : _fragments :: newblogList
+2021-07-23 08:53:21.897  INFO 12640 --- [http-nio-8080-exec-3] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 08:54:39.721  INFO 10348 --- [restartedMain] com.wyx.blog.BlogApplication             : Starting BlogApplication using Java 1.8.0_74 on MACHENIKE-PC with PID 10348 (D:\My_project\Project_Spring_Blog\project_two\blog\target\classes started by MK in D:\My_project\Project_Spring_Blog\project_two\blog)
+2021-07-23 08:54:39.723 DEBUG 10348 --- [restartedMain] com.wyx.blog.BlogApplication             : Running with Spring Boot v2.5.0, Spring v5.3.7
+2021-07-23 08:54:39.724  INFO 10348 --- [restartedMain] com.wyx.blog.BlogApplication             : The following profiles are active: dev
+2021-07-23 08:54:39.771  INFO 10348 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-23 08:54:39.771  INFO 10348 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-23 08:54:40.527  INFO 10348 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-23 08:54:40.632  INFO 10348 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 91 ms. Found 5 JPA repository interfaces.
+2021-07-23 08:54:41.487  INFO 10348 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-07-23 08:54:41.500  INFO 10348 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-23 08:54:41.500  INFO 10348 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-07-23 08:54:41.616  INFO 10348 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-23 08:54:41.617  INFO 10348 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1845 ms
+2021-07-23 08:54:41.835  INFO 10348 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-23 08:54:41.891  INFO 10348 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-07-23 08:54:42.005  INFO 10348 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-23 08:54:42.162  INFO 10348 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-07-23 08:54:42.453  INFO 10348 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-07-23 08:54:42.469  INFO 10348 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-07-23 08:54:43.233  INFO 10348 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-23 08:54:43.241  INFO 10348 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-23 08:54:44.259  WARN 10348 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-23 08:54:44.528  INFO 10348 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-07-23 08:54:44.842  INFO 10348 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-07-23 08:54:44.876  INFO 10348 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-23 08:54:44.885  INFO 10348 --- [restartedMain] com.wyx.blog.BlogApplication             : Started BlogApplication in 5.715 seconds (JVM running for 7.193)
+2021-07-23 08:54:44.886  INFO 10348 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-07-23 08:54:44.888  INFO 10348 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-07-23 08:54:44.936  INFO 10348 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-23 08:54:44.936  INFO 10348 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-07-23 08:54:44.937  INFO 10348 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-07-23 08:54:44.964  INFO 10348 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2021-07-23 08:54:45.055  WARN 10348 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-07-23 08:54:45.067  WARN 10348 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-07-23 08:54:45.073  INFO 10348 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : result : index
+2021-07-23 08:54:45.073  INFO 10348 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 08:54:45.523  INFO 10348 --- [http-nio-8080-exec-2] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.IndexController.newblogs', args=[{}]}
+2021-07-23 08:54:45.529  INFO 10348 --- [http-nio-8080-exec-2] com.wyx.blog.aspect.LogAspect            : result : _fragments :: newblogList
+2021-07-23 08:54:45.530  INFO 10348 --- [http-nio-8080-exec-2] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 08:54:46.599  INFO 10348 --- [http-nio-8080-exec-4] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2021-07-23 08:54:46.618  INFO 10348 --- [http-nio-8080-exec-4] com.wyx.blog.aspect.LogAspect            : result : types
+2021-07-23 08:54:46.618  INFO 10348 --- [http-nio-8080-exec-4] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 08:54:53.212  INFO 10348 --- [http-nio-8080-exec-9] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2021-07-23 08:54:53.238  INFO 10348 --- [http-nio-8080-exec-9] com.wyx.blog.aspect.LogAspect            : result : tags
+2021-07-23 08:54:53.239  INFO 10348 --- [http-nio-8080-exec-9] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 08:55:16.324  INFO 10348 --- [http-nio-8080-exec-10] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2021-07-23 08:55:16.344  INFO 10348 --- [http-nio-8080-exec-10] com.wyx.blog.aspect.LogAspect            : result : index
+2021-07-23 08:55:16.344  INFO 10348 --- [http-nio-8080-exec-10] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 08:55:16.604  INFO 10348 --- [http-nio-8080-exec-9] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.IndexController.newblogs', args=[{}]}
+2021-07-23 08:55:16.610  INFO 10348 --- [http-nio-8080-exec-9] com.wyx.blog.aspect.LogAspect            : result : _fragments :: newblogList
+2021-07-23 08:55:16.611  INFO 10348 --- [http-nio-8080-exec-9] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 08:55:23.221  INFO 10348 --- [http-nio-8080-exec-7] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/blog/43', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.IndexController.blog', args=[43, {}]}
+2021-07-23 08:55:23.307  INFO 10348 --- [http-nio-8080-exec-7] com.wyx.blog.aspect.LogAspect            : result : blog
+2021-07-23 08:55:23.308  INFO 10348 --- [http-nio-8080-exec-7] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 08:55:23.581  INFO 10348 --- [http-nio-8080-exec-4] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='127.0.0.1', classMethod='com.wyx.blog.web.IndexController.newblogs', args=[{}]}
+2021-07-23 08:55:23.586  INFO 10348 --- [http-nio-8080-exec-4] com.wyx.blog.aspect.LogAspect            : result : _fragments :: newblogList
+2021-07-23 08:55:23.586  INFO 10348 --- [http-nio-8080-exec-4] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 08:55:23.634  INFO 10348 --- [http-nio-8080-exec-2] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/comments/43', ip='127.0.0.1', classMethod='com.wyx.blog.web.CommentController.comments', args=[43, {}]}
+2021-07-23 08:55:23.686  INFO 10348 --- [http-nio-8080-exec-2] com.wyx.blog.aspect.LogAspect            : result : blog :: commentList
+2021-07-23 08:55:23.686  INFO 10348 --- [http-nio-8080-exec-2] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 08:55:27.144  INFO 10348 --- [http-nio-8080-exec-5] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/tags/-1', ip='127.0.0.1', classMethod='com.wyx.blog.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2021-07-23 08:55:27.156  INFO 10348 --- [http-nio-8080-exec-5] com.wyx.blog.aspect.LogAspect            : result : tags
+2021-07-23 08:55:27.157  INFO 10348 --- [http-nio-8080-exec-5] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 08:55:34.369  INFO 10348 --- [http-nio-8080-exec-2] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/types/-1', ip='127.0.0.1', classMethod='com.wyx.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2021-07-23 08:55:34.377  INFO 10348 --- [http-nio-8080-exec-2] com.wyx.blog.aspect.LogAspect            : result : types
+2021-07-23 08:55:34.377  INFO 10348 --- [http-nio-8080-exec-2] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 08:55:37.255  INFO 10348 --- [http-nio-8080-exec-10] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/archives', ip='127.0.0.1', classMethod='com.wyx.blog.web.ArchiveShowController.archives', args=[{}]}
+2021-07-23 08:55:37.273  INFO 10348 --- [http-nio-8080-exec-10] com.wyx.blog.aspect.LogAspect            : result : archives
+2021-07-23 08:55:37.273  INFO 10348 --- [http-nio-8080-exec-10] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 08:55:43.021  INFO 10348 --- [http-nio-8080-exec-6] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2021-07-23 08:55:43.027  INFO 10348 --- [http-nio-8080-exec-6] com.wyx.blog.aspect.LogAspect            : result : types
+2021-07-23 08:55:43.027  INFO 10348 --- [http-nio-8080-exec-6] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 08:55:59.398  INFO 10348 --- [http-nio-8080-exec-5] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/types/4', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 4, {}]}
+2021-07-23 08:55:59.406  INFO 10348 --- [http-nio-8080-exec-5] com.wyx.blog.aspect.LogAspect            : result : types
+2021-07-23 08:55:59.406  INFO 10348 --- [http-nio-8080-exec-5] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 08:56:03.095  INFO 10348 --- [http-nio-8080-exec-2] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/types/1', ip='127.0.0.1', classMethod='com.wyx.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 1, {}]}
+2021-07-23 08:56:03.103  INFO 10348 --- [http-nio-8080-exec-2] com.wyx.blog.aspect.LogAspect            : result : types
+2021-07-23 08:56:03.103  INFO 10348 --- [http-nio-8080-exec-2] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 08:56:03.725  INFO 10348 --- [http-nio-8080-exec-9] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/types/3', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 3, {}]}
+2021-07-23 08:56:03.732  INFO 10348 --- [http-nio-8080-exec-9] com.wyx.blog.aspect.LogAspect            : result : types
+2021-07-23 08:56:03.733  INFO 10348 --- [http-nio-8080-exec-9] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 09:02:19.455  INFO 12572 --- [restartedMain] com.wyx.blog.BlogApplication             : Starting BlogApplication using Java 1.8.0_74 on MACHENIKE-PC with PID 12572 (D:\My_project\Project_Spring_Blog\project_two\blog\target\classes started by MK in D:\My_project\Project_Spring_Blog\project_two\blog)
+2021-07-23 09:02:19.457 DEBUG 12572 --- [restartedMain] com.wyx.blog.BlogApplication             : Running with Spring Boot v2.5.0, Spring v5.3.7
+2021-07-23 09:02:19.457  INFO 12572 --- [restartedMain] com.wyx.blog.BlogApplication             : The following profiles are active: dev
+2021-07-23 09:02:19.491  INFO 12572 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-23 09:02:19.492  INFO 12572 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-23 09:02:20.035  INFO 12572 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-23 09:02:20.099  INFO 12572 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 5 JPA repository interfaces.
+2021-07-23 09:02:20.707  INFO 12572 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-07-23 09:02:20.713  INFO 12572 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-23 09:02:20.713  INFO 12572 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-07-23 09:02:20.798  INFO 12572 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-23 09:02:20.799  INFO 12572 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1307 ms
+2021-07-23 09:02:20.938  INFO 12572 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-23 09:02:20.969  INFO 12572 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-07-23 09:02:21.050  INFO 12572 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-23 09:02:21.120  INFO 12572 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-07-23 09:02:21.362  INFO 12572 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-07-23 09:02:21.378  INFO 12572 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-07-23 09:02:22.023  INFO 12572 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-23 09:02:22.029  INFO 12572 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-23 09:02:22.822  WARN 12572 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-23 09:02:23.047  INFO 12572 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-07-23 09:02:23.347  INFO 12572 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-07-23 09:02:23.387  INFO 12572 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-23 09:02:23.396  INFO 12572 --- [restartedMain] com.wyx.blog.BlogApplication             : Started BlogApplication in 4.371 seconds (JVM running for 5.907)
+2021-07-23 09:02:23.397  INFO 12572 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-07-23 09:02:23.399  INFO 12572 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-07-23 09:02:26.047  INFO 12572 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-23 09:02:26.047  INFO 12572 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-07-23 09:02:26.048  INFO 12572 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-07-23 09:02:26.080  INFO 12572 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/types/3', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 3, {}]}
+2021-07-23 09:02:26.097  WARN 12572 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-07-23 09:02:26.174  INFO 12572 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : result : types
+2021-07-23 09:02:26.174  INFO 12572 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 09:02:26.659  INFO 12572 --- [http-nio-8080-exec-6] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.IndexController.newblogs', args=[{}]}
+2021-07-23 09:02:26.672  INFO 12572 --- [http-nio-8080-exec-6] com.wyx.blog.aspect.LogAspect            : result : _fragments :: newblogList
+2021-07-23 09:02:26.672  INFO 12572 --- [http-nio-8080-exec-6] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 09:02:28.072  INFO 12572 --- [http-nio-8080-exec-8] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2021-07-23 09:02:28.076  WARN 12572 --- [http-nio-8080-exec-8] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-07-23 09:02:28.105  INFO 12572 --- [http-nio-8080-exec-8] com.wyx.blog.aspect.LogAspect            : result : tags
+2021-07-23 09:02:28.106  INFO 12572 --- [http-nio-8080-exec-8] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 09:02:28.290  INFO 12572 --- [http-nio-8080-exec-2] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.IndexController.newblogs', args=[{}]}
+2021-07-23 09:02:28.299  INFO 12572 --- [http-nio-8080-exec-2] com.wyx.blog.aspect.LogAspect            : result : _fragments :: newblogList
+2021-07-23 09:02:28.299  INFO 12572 --- [http-nio-8080-exec-2] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 09:02:30.589  INFO 12572 --- [http-nio-8080-exec-3] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.ArchiveShowController.archives', args=[{}]}
+2021-07-23 09:02:30.614  INFO 12572 --- [http-nio-8080-exec-3] com.wyx.blog.aspect.LogAspect            : result : archives
+2021-07-23 09:02:30.614  INFO 12572 --- [http-nio-8080-exec-3] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 09:02:30.941  INFO 12572 --- [http-nio-8080-exec-8] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.IndexController.newblogs', args=[{}]}
+2021-07-23 09:02:30.948  INFO 12572 --- [http-nio-8080-exec-8] com.wyx.blog.aspect.LogAspect            : result : _fragments :: newblogList
+2021-07-23 09:02:30.948  INFO 12572 --- [http-nio-8080-exec-8] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 09:03:28.891  INFO 12796 --- [restartedMain] com.wyx.blog.BlogApplication             : Starting BlogApplication using Java 1.8.0_74 on MACHENIKE-PC with PID 12796 (D:\My_project\Project_Spring_Blog\project_two\blog\target\classes started by MK in D:\My_project\Project_Spring_Blog\project_two\blog)
+2021-07-23 09:03:28.893 DEBUG 12796 --- [restartedMain] com.wyx.blog.BlogApplication             : Running with Spring Boot v2.5.0, Spring v5.3.7
+2021-07-23 09:03:28.893  INFO 12796 --- [restartedMain] com.wyx.blog.BlogApplication             : The following profiles are active: dev
+2021-07-23 09:03:28.928  INFO 12796 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-23 09:03:28.929  INFO 12796 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-23 09:03:29.484  INFO 12796 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-23 09:03:29.568  INFO 12796 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 74 ms. Found 5 JPA repository interfaces.
+2021-07-23 09:03:30.232  INFO 12796 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-07-23 09:03:30.239  INFO 12796 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-23 09:03:30.239  INFO 12796 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-07-23 09:03:30.330  INFO 12796 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-23 09:03:30.330  INFO 12796 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1401 ms
+2021-07-23 09:03:30.473  INFO 12796 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-23 09:03:30.505  INFO 12796 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-07-23 09:03:30.587  INFO 12796 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-23 09:03:30.654  INFO 12796 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-07-23 09:03:30.854  INFO 12796 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-07-23 09:03:30.868  INFO 12796 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-07-23 09:03:31.449  INFO 12796 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-23 09:03:31.455  INFO 12796 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-23 09:03:32.280  WARN 12796 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-23 09:03:32.515  INFO 12796 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-07-23 09:03:32.790  INFO 12796 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-07-23 09:03:32.821  INFO 12796 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-23 09:03:32.828  INFO 12796 --- [restartedMain] com.wyx.blog.BlogApplication             : Started BlogApplication in 4.337 seconds (JVM running for 5.494)
+2021-07-23 09:03:32.829  INFO 12796 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-07-23 09:03:32.831  INFO 12796 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-07-23 09:03:38.504  INFO 12796 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-23 09:03:38.504  INFO 12796 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-07-23 09:03:38.505  INFO 12796 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-07-23 09:03:38.534  INFO 12796 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2021-07-23 09:03:38.621  WARN 12796 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-07-23 09:03:38.633  WARN 12796 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-07-23 09:03:38.639  INFO 12796 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : result : index
+2021-07-23 09:03:38.640  INFO 12796 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 09:03:39.111  INFO 12796 --- [http-nio-8080-exec-5] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.IndexController.newblogs', args=[{}]}
+2021-07-23 09:03:39.120  INFO 12796 --- [http-nio-8080-exec-5] com.wyx.blog.aspect.LogAspect            : result : _fragments :: newblogList
+2021-07-23 09:03:39.120  INFO 12796 --- [http-nio-8080-exec-5] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 09:03:41.533  INFO 12796 --- [http-nio-8080-exec-3] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.ArchiveShowController.archives', args=[{}]}
+2021-07-23 09:03:41.556  INFO 12796 --- [http-nio-8080-exec-3] com.wyx.blog.aspect.LogAspect            : result : archives
+2021-07-23 09:03:41.557  INFO 12796 --- [http-nio-8080-exec-3] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 09:03:41.681  INFO 12796 --- [http-nio-8080-exec-4] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.IndexController.newblogs', args=[{}]}
+2021-07-23 09:03:41.687  INFO 12796 --- [http-nio-8080-exec-4] com.wyx.blog.aspect.LogAspect            : result : _fragments :: newblogList
+2021-07-23 09:03:41.688  INFO 12796 --- [http-nio-8080-exec-4] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 09:03:42.284  INFO 12796 --- [http-nio-8080-exec-2] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2021-07-23 09:03:42.307  INFO 12796 --- [http-nio-8080-exec-2] com.wyx.blog.aspect.LogAspect            : result : tags
+2021-07-23 09:03:42.307  INFO 12796 --- [http-nio-8080-exec-2] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 09:03:42.473  INFO 12796 --- [http-nio-8080-exec-6] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.IndexController.newblogs', args=[{}]}
+2021-07-23 09:03:42.480  INFO 12796 --- [http-nio-8080-exec-6] com.wyx.blog.aspect.LogAspect            : result : _fragments :: newblogList
+2021-07-23 09:03:42.480  INFO 12796 --- [http-nio-8080-exec-6] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 09:03:42.711  INFO 12796 --- [http-nio-8080-exec-10] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2021-07-23 09:03:42.725  INFO 12796 --- [http-nio-8080-exec-10] com.wyx.blog.aspect.LogAspect            : result : types
+2021-07-23 09:03:42.725  INFO 12796 --- [http-nio-8080-exec-10] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 09:03:43.030  INFO 12796 --- [http-nio-8080-exec-7] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.IndexController.newblogs', args=[{}]}
+2021-07-23 09:03:43.035  INFO 12796 --- [http-nio-8080-exec-7] com.wyx.blog.aspect.LogAspect            : result : _fragments :: newblogList
+2021-07-23 09:03:43.036  INFO 12796 --- [http-nio-8080-exec-7] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 09:03:43.321  INFO 12796 --- [http-nio-8080-exec-5] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.ArchiveShowController.archives', args=[{}]}
+2021-07-23 09:03:43.333  INFO 12796 --- [http-nio-8080-exec-5] com.wyx.blog.aspect.LogAspect            : result : archives
+2021-07-23 09:03:43.333  INFO 12796 --- [http-nio-8080-exec-5] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 09:03:43.450  INFO 12796 --- [http-nio-8080-exec-3] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.IndexController.newblogs', args=[{}]}
+2021-07-23 09:03:43.459  INFO 12796 --- [http-nio-8080-exec-3] com.wyx.blog.aspect.LogAspect            : result : _fragments :: newblogList
+2021-07-23 09:03:43.459  INFO 12796 --- [http-nio-8080-exec-3] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 09:04:37.667  INFO 3188 --- [restartedMain] com.wyx.blog.BlogApplication             : Starting BlogApplication using Java 1.8.0_74 on MACHENIKE-PC with PID 3188 (D:\My_project\Project_Spring_Blog\project_two\blog\target\classes started by MK in D:\My_project\Project_Spring_Blog\project_two\blog)
+2021-07-23 09:04:37.669 DEBUG 3188 --- [restartedMain] com.wyx.blog.BlogApplication             : Running with Spring Boot v2.5.0, Spring v5.3.7
+2021-07-23 09:04:37.670  INFO 3188 --- [restartedMain] com.wyx.blog.BlogApplication             : The following profiles are active: dev
+2021-07-23 09:04:37.714  INFO 3188 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-23 09:04:37.714  INFO 3188 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-23 09:04:38.254  INFO 3188 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-23 09:04:38.317  INFO 3188 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 5 JPA repository interfaces.
+2021-07-23 09:04:38.966  INFO 3188 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-07-23 09:04:38.974  INFO 3188 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-23 09:04:38.974  INFO 3188 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-07-23 09:04:39.052  INFO 3188 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-23 09:04:39.052  INFO 3188 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1338 ms
+2021-07-23 09:04:39.178  INFO 3188 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-23 09:04:39.213  INFO 3188 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-07-23 09:04:39.302  INFO 3188 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-23 09:04:39.372  INFO 3188 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-07-23 09:04:39.588  INFO 3188 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-07-23 09:04:39.602  INFO 3188 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-07-23 09:04:40.223  INFO 3188 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-23 09:04:40.231  INFO 3188 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-23 09:04:41.158  WARN 3188 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-23 09:04:41.401  INFO 3188 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-07-23 09:04:41.678  INFO 3188 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-07-23 09:04:41.710  INFO 3188 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-23 09:04:41.719  INFO 3188 --- [restartedMain] com.wyx.blog.BlogApplication             : Started BlogApplication in 4.515 seconds (JVM running for 5.606)
+2021-07-23 09:04:41.720  INFO 3188 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-07-23 09:04:41.721  INFO 3188 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-07-23 09:04:41.928  INFO 3188 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-23 09:04:41.929  INFO 3188 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-07-23 09:04:41.930  INFO 3188 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-07-23 09:04:41.960  INFO 3188 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/about', ip='127.0.0.1', classMethod='com.wyx.blog.web.AboutShowController.about', args=[]}
+2021-07-23 09:04:41.971  INFO 3188 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : result : about
+2021-07-23 09:04:41.972  INFO 3188 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 09:04:42.497  INFO 3188 --- [http-nio-8080-exec-9] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.IndexController.newblogs', args=[{}]}
+2021-07-23 09:04:42.552  INFO 3188 --- [http-nio-8080-exec-9] com.wyx.blog.aspect.LogAspect            : result : _fragments :: newblogList
+2021-07-23 09:04:42.552  INFO 3188 --- [http-nio-8080-exec-9] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 09:04:45.208  INFO 3188 --- [http-nio-8080-exec-2] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.ArchiveShowController.archives', args=[{}]}
+2021-07-23 09:04:45.244  INFO 3188 --- [http-nio-8080-exec-2] com.wyx.blog.aspect.LogAspect            : result : archives
+2021-07-23 09:04:45.244  INFO 3188 --- [http-nio-8080-exec-2] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 09:04:45.392  INFO 3188 --- [http-nio-8080-exec-6] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.IndexController.newblogs', args=[{}]}
+2021-07-23 09:04:45.403  INFO 3188 --- [http-nio-8080-exec-6] com.wyx.blog.aspect.LogAspect            : result : _fragments :: newblogList
+2021-07-23 09:04:45.403  INFO 3188 --- [http-nio-8080-exec-6] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 09:04:45.707  INFO 3188 --- [http-nio-8080-exec-5] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2021-07-23 09:04:45.714  WARN 3188 --- [http-nio-8080-exec-5] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-07-23 09:04:45.754  INFO 3188 --- [http-nio-8080-exec-5] com.wyx.blog.aspect.LogAspect            : result : tags
+2021-07-23 09:04:45.754  INFO 3188 --- [http-nio-8080-exec-5] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 09:04:45.919  INFO 3188 --- [http-nio-8080-exec-10] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.IndexController.newblogs', args=[{}]}
+2021-07-23 09:04:45.928  INFO 3188 --- [http-nio-8080-exec-10] com.wyx.blog.aspect.LogAspect            : result : _fragments :: newblogList
+2021-07-23 09:04:45.928  INFO 3188 --- [http-nio-8080-exec-10] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 09:04:46.065  INFO 3188 --- [http-nio-8080-exec-7] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2021-07-23 09:04:46.070  WARN 3188 --- [http-nio-8080-exec-7] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-07-23 09:04:46.079  INFO 3188 --- [http-nio-8080-exec-7] com.wyx.blog.aspect.LogAspect            : result : types
+2021-07-23 09:04:46.079  INFO 3188 --- [http-nio-8080-exec-7] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 09:04:46.237  INFO 3188 --- [http-nio-8080-exec-8] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.IndexController.newblogs', args=[{}]}
+2021-07-23 09:04:46.244  INFO 3188 --- [http-nio-8080-exec-8] com.wyx.blog.aspect.LogAspect            : result : _fragments :: newblogList
+2021-07-23 09:04:46.244  INFO 3188 --- [http-nio-8080-exec-8] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 09:04:46.371  INFO 3188 --- [http-nio-8080-exec-3] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2021-07-23 09:04:46.387  INFO 3188 --- [http-nio-8080-exec-3] com.wyx.blog.aspect.LogAspect            : result : index
+2021-07-23 09:04:46.387  INFO 3188 --- [http-nio-8080-exec-3] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 09:04:46.538  INFO 3188 --- [http-nio-8080-exec-10] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.IndexController.newblogs', args=[{}]}
+2021-07-23 09:04:46.546  INFO 3188 --- [http-nio-8080-exec-10] com.wyx.blog.aspect.LogAspect            : result : _fragments :: newblogList
+2021-07-23 09:04:46.547  INFO 3188 --- [http-nio-8080-exec-10] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 09:04:46.742  INFO 3188 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2021-07-23 09:04:46.752  INFO 3188 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : result : types
+2021-07-23 09:04:46.752  INFO 3188 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 09:04:46.908  INFO 3188 --- [http-nio-8080-exec-6] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.IndexController.newblogs', args=[{}]}
+2021-07-23 09:04:46.913  INFO 3188 --- [http-nio-8080-exec-6] com.wyx.blog.aspect.LogAspect            : result : _fragments :: newblogList
+2021-07-23 09:04:46.914  INFO 3188 --- [http-nio-8080-exec-6] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 09:04:47.071  INFO 3188 --- [http-nio-8080-exec-3] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2021-07-23 09:04:47.080  INFO 3188 --- [http-nio-8080-exec-3] com.wyx.blog.aspect.LogAspect            : result : tags
+2021-07-23 09:04:47.080  INFO 3188 --- [http-nio-8080-exec-3] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 09:04:47.229  INFO 3188 --- [http-nio-8080-exec-2] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='127.0.0.1', classMethod='com.wyx.blog.web.IndexController.newblogs', args=[{}]}
+2021-07-23 09:04:47.236  INFO 3188 --- [http-nio-8080-exec-2] com.wyx.blog.aspect.LogAspect            : result : _fragments :: newblogList
+2021-07-23 09:04:47.236  INFO 3188 --- [http-nio-8080-exec-2] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 09:04:47.383  INFO 3188 --- [http-nio-8080-exec-7] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/archives', ip='127.0.0.1', classMethod='com.wyx.blog.web.ArchiveShowController.archives', args=[{}]}
+2021-07-23 09:04:47.400  INFO 3188 --- [http-nio-8080-exec-7] com.wyx.blog.aspect.LogAspect            : result : archives
+2021-07-23 09:04:47.400  INFO 3188 --- [http-nio-8080-exec-7] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 09:04:47.524  INFO 3188 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.IndexController.newblogs', args=[{}]}
+2021-07-23 09:04:47.531  INFO 3188 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : result : _fragments :: newblogList
+2021-07-23 09:04:47.531  INFO 3188 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 09:04:47.633  INFO 3188 --- [http-nio-8080-exec-9] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/about', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.AboutShowController.about', args=[]}
+2021-07-23 09:04:47.633  INFO 3188 --- [http-nio-8080-exec-9] com.wyx.blog.aspect.LogAspect            : result : about
+2021-07-23 09:04:47.633  INFO 3188 --- [http-nio-8080-exec-9] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 09:04:47.755  INFO 3188 --- [http-nio-8080-exec-2] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.IndexController.newblogs', args=[{}]}
+2021-07-23 09:04:47.760  INFO 3188 --- [http-nio-8080-exec-2] com.wyx.blog.aspect.LogAspect            : result : _fragments :: newblogList
+2021-07-23 09:04:47.760  INFO 3188 --- [http-nio-8080-exec-2] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 09:04:49.223  INFO 3188 --- [http-nio-8080-exec-8] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.ArchiveShowController.archives', args=[{}]}
+2021-07-23 09:04:49.237  INFO 3188 --- [http-nio-8080-exec-8] com.wyx.blog.aspect.LogAspect            : result : archives
+2021-07-23 09:04:49.237  INFO 3188 --- [http-nio-8080-exec-8] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 09:04:49.369  INFO 3188 --- [http-nio-8080-exec-5] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.IndexController.newblogs', args=[{}]}
+2021-07-23 09:04:49.374  INFO 3188 --- [http-nio-8080-exec-5] com.wyx.blog.aspect.LogAspect            : result : _fragments :: newblogList
+2021-07-23 09:04:49.374  INFO 3188 --- [http-nio-8080-exec-5] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 09:04:51.729  INFO 3188 --- [http-nio-8080-exec-6] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2021-07-23 09:04:51.737  INFO 3188 --- [http-nio-8080-exec-6] com.wyx.blog.aspect.LogAspect            : result : types
+2021-07-23 09:04:51.737  INFO 3188 --- [http-nio-8080-exec-6] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 09:04:51.875  INFO 3188 --- [http-nio-8080-exec-10] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.IndexController.newblogs', args=[{}]}
+2021-07-23 09:04:51.884  INFO 3188 --- [http-nio-8080-exec-10] com.wyx.blog.aspect.LogAspect            : result : _fragments :: newblogList
+2021-07-23 09:04:51.884  INFO 3188 --- [http-nio-8080-exec-10] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 09:04:56.124  INFO 3188 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/search', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.IndexController.search', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 过渡, {}]}
+2021-07-23 09:04:56.133  INFO 3188 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : result : search
+2021-07-23 09:04:56.133  INFO 3188 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 09:04:56.241  INFO 3188 --- [http-nio-8080-exec-7] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.IndexController.newblogs', args=[{}]}
+2021-07-23 09:04:56.245  INFO 3188 --- [http-nio-8080-exec-7] com.wyx.blog.aspect.LogAspect            : result : _fragments :: newblogList
+2021-07-23 09:04:56.246  INFO 3188 --- [http-nio-8080-exec-7] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 09:05:02.342  INFO 3188 --- [http-nio-8080-exec-9] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2021-07-23 09:05:02.348  INFO 3188 --- [http-nio-8080-exec-9] com.wyx.blog.aspect.LogAspect            : result : types
+2021-07-23 09:05:02.349  INFO 3188 --- [http-nio-8080-exec-9] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 09:05:02.563  INFO 3188 --- [http-nio-8080-exec-3] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='127.0.0.1', classMethod='com.wyx.blog.web.IndexController.newblogs', args=[{}]}
+2021-07-23 09:05:02.567  INFO 3188 --- [http-nio-8080-exec-3] com.wyx.blog.aspect.LogAspect            : result : _fragments :: newblogList
+2021-07-23 09:05:02.567  INFO 3188 --- [http-nio-8080-exec-3] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 09:05:02.695  INFO 3188 --- [http-nio-8080-exec-4] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/', ip='127.0.0.1', classMethod='com.wyx.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2021-07-23 09:05:02.709  INFO 3188 --- [http-nio-8080-exec-4] com.wyx.blog.aspect.LogAspect            : result : index
+2021-07-23 09:05:02.709  INFO 3188 --- [http-nio-8080-exec-4] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 09:05:02.841  INFO 3188 --- [http-nio-8080-exec-4] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.IndexController.newblogs', args=[{}]}
+2021-07-23 09:05:02.845  INFO 3188 --- [http-nio-8080-exec-4] com.wyx.blog.aspect.LogAspect            : result : _fragments :: newblogList
+2021-07-23 09:05:02.845  INFO 3188 --- [http-nio-8080-exec-4] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 09:05:03.295  INFO 3188 --- [http-nio-8080-exec-6] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.ArchiveShowController.archives', args=[{}]}
+2021-07-23 09:05:03.305  INFO 3188 --- [http-nio-8080-exec-6] com.wyx.blog.aspect.LogAspect            : result : archives
+2021-07-23 09:05:03.306  INFO 3188 --- [http-nio-8080-exec-6] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 09:05:03.421  INFO 3188 --- [http-nio-8080-exec-2] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='127.0.0.1', classMethod='com.wyx.blog.web.IndexController.newblogs', args=[{}]}
+2021-07-23 09:05:03.427  INFO 3188 --- [http-nio-8080-exec-2] com.wyx.blog.aspect.LogAspect            : result : _fragments :: newblogList
+2021-07-23 09:05:03.427  INFO 3188 --- [http-nio-8080-exec-2] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 09:05:03.948  INFO 3188 --- [http-nio-8080-exec-7] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/about', ip='127.0.0.1', classMethod='com.wyx.blog.web.AboutShowController.about', args=[]}
+2021-07-23 09:05:03.948  INFO 3188 --- [http-nio-8080-exec-7] com.wyx.blog.aspect.LogAspect            : result : about
+2021-07-23 09:05:03.948  INFO 3188 --- [http-nio-8080-exec-7] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 09:05:04.080  INFO 3188 --- [http-nio-8080-exec-4] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.IndexController.newblogs', args=[{}]}
+2021-07-23 09:05:04.085  INFO 3188 --- [http-nio-8080-exec-4] com.wyx.blog.aspect.LogAspect            : result : _fragments :: newblogList
+2021-07-23 09:05:04.085  INFO 3188 --- [http-nio-8080-exec-4] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 09:05:04.752  INFO 3188 --- [http-nio-8080-exec-3] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2021-07-23 09:05:04.761  INFO 3188 --- [http-nio-8080-exec-3] com.wyx.blog.aspect.LogAspect            : result : tags
+2021-07-23 09:05:04.761  INFO 3188 --- [http-nio-8080-exec-3] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 09:05:04.886  INFO 3188 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.IndexController.newblogs', args=[{}]}
+2021-07-23 09:05:04.891  INFO 3188 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : result : _fragments :: newblogList
+2021-07-23 09:05:04.891  INFO 3188 --- [http-nio-8080-exec-1] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 09:05:05.482  INFO 3188 --- [http-nio-8080-exec-9] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2021-07-23 09:05:05.493  INFO 3188 --- [http-nio-8080-exec-9] com.wyx.blog.aspect.LogAspect            : result : index
+2021-07-23 09:05:05.493  INFO 3188 --- [http-nio-8080-exec-9] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 09:05:05.628  INFO 3188 --- [http-nio-8080-exec-6] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='127.0.0.1', classMethod='com.wyx.blog.web.IndexController.newblogs', args=[{}]}
+2021-07-23 09:05:05.634  INFO 3188 --- [http-nio-8080-exec-6] com.wyx.blog.aspect.LogAspect            : result : _fragments :: newblogList
+2021-07-23 09:05:05.634  INFO 3188 --- [http-nio-8080-exec-6] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 09:05:05.998  INFO 3188 --- [http-nio-8080-exec-10] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/types/-1', ip='127.0.0.1', classMethod='com.wyx.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2021-07-23 09:05:06.004  INFO 3188 --- [http-nio-8080-exec-10] com.wyx.blog.aspect.LogAspect            : result : types
+2021-07-23 09:05:06.004  INFO 3188 --- [http-nio-8080-exec-10] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 09:05:06.150  INFO 3188 --- [http-nio-8080-exec-3] com.wyx.blog.aspect.LogAspect            : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wyx.blog.web.IndexController.newblogs', args=[{}]}
+2021-07-23 09:05:06.155  INFO 3188 --- [http-nio-8080-exec-3] com.wyx.blog.aspect.LogAspect            : result : _fragments :: newblogList
+2021-07-23 09:05:06.156  INFO 3188 --- [http-nio-8080-exec-3] com.wyx.blog.aspect.LogAspect            : --------doAfter------
+2021-07-23 09:05:16.399  INFO 11196 --- [restartedMain] com.wyx.blog.BlogApplication             : Starting BlogApplication using Java 1.8.0_74 on MACHENIKE-PC with PID 11196 (D:\My_project\Project_Spring_Blog\project_two\blog\target\classes started by MK in D:\My_project\Project_Spring_Blog\project_two\blog)
+2021-07-23 09:05:16.401 DEBUG 11196 --- [restartedMain] com.wyx.blog.BlogApplication             : Running with Spring Boot v2.5.0, Spring v5.3.7
+2021-07-23 09:05:16.401  INFO 11196 --- [restartedMain] com.wyx.blog.BlogApplication             : The following profiles are active: dev
+2021-07-23 09:05:16.435  INFO 11196 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-23 09:05:16.435  INFO 11196 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-23 09:05:16.973  INFO 11196 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-23 09:05:17.036  INFO 11196 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 5 JPA repository interfaces.
+2021-07-23 09:05:17.727  INFO 11196 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-07-23 09:05:17.735  INFO 11196 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-23 09:05:17.736  INFO 11196 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-07-23 09:05:17.828  INFO 11196 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-23 09:05:17.828  INFO 11196 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1392 ms
+2021-07-23 09:05:17.987  INFO 11196 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-23 09:05:18.031  INFO 11196 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-07-23 09:05:18.154  INFO 11196 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-23 09:05:18.237  INFO 11196 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-07-23 09:05:18.496  INFO 11196 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-07-23 09:05:18.514  INFO 11196 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-07-23 09:05:19.246  INFO 11196 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-23 09:05:19.253  INFO 11196 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-23 09:05:20.485  WARN 11196 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-23 09:05:20.819  INFO 11196 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-07-23 09:05:21.164  INFO 11196 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-07-23 09:05:21.200  INFO 11196 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-23 09:05:21.209  INFO 11196 --- [restartedMain] com.wyx.blog.BlogApplication             : Started BlogApplication in 5.224 seconds (JVM running for 6.623)
+2021-07-23 09:05:21.210  INFO 11196 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-07-23 09:05:21.212  INFO 11196 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC

@@ -61,17 +61,12 @@ public class IndexController {
     }
 
 
-    //以后不需要的
-
-    @GetMapping("/about")
-    public String about() {
-        return "about";
+    //动态生成footer上的最新博客
+    @GetMapping("/footer/newblog")
+    public String newblogs(Model model){
+        model.addAttribute("newblogs",blogService.listRecommendBlogTop(3));
+        return "_fragments :: newblogList";
     }
-
-//    @GetMapping("/tags")
-//    public String tags(){
-//        return "tags";
-//    }
 
 
 }
